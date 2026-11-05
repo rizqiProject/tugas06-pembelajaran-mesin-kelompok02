@@ -109,7 +109,8 @@ def tulis(lap, D):
         ['Berkas atau folder', 'Isi'],
         [['TUGAS_06_KELOMPOK_02_NOTARIS_PPAT.docx', 'Laporan Word final'],
          ['TUGAS_06_KELOMPOK_02_NOTARIS_PPAT.pdf', 'Laporan PDF final'],
-         ['README_TUGAS_06.md', 'Ringkasan, hasil kunci, dan cara menjalankan'],
+         ['README.md dan README_TUGAS_06.md', 'Halaman depan repo, ringkasan, dan '
+          'cara menjalankan'],
          ['AUDIT_FILE_PROYEK_TUGAS_06.md', 'Audit berkas dan konsistensi data'],
          ['eksperimen_tugas_06/eksperimen_tugas06.py', 'Skrip eksperimen utama'],
          ['eksperimen_tugas_06/fitur_notaris.py', 'Transformer fitur'],
