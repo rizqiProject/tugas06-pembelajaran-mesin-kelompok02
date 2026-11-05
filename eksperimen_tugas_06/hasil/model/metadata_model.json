@@ -4,7 +4,7 @@
   "mata_kuliah": "Pembelajaran Mesin",
   "kelas": "KG.043.10.A",
   "semester": "Gasal 2026/2027",
-  "tanggal_eksperimen": "2026-11-05T16:39:14.406040",
+  "tanggal_eksperimen": "2026-11-05T17:04:38.445664",
   "algoritma": "DecisionTreeClassifier",
   "baseline_params": {
     "max_depth": 4,

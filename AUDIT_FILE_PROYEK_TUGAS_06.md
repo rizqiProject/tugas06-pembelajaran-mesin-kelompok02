@@ -111,6 +111,7 @@ dalam instruksi, yaitu 169 berkas, 33 terlambat, 136 tepat waktu, 135 train, dan
 | `eksperimen_tugas_06/hasil/log/` | Log eksekusi dan versi lingkungan |
 | `laporan_tugas_06/` | Laporan Word, PDF, dan skrip penyusun laporan |
 | `README_TUGAS_06.md` | Ringkasan hasil, struktur, dan cara menjalankan ulang |
+| `CEK_KESESUAIAN_TEMPLATE_TUGAS_06.md` | Checklist template dan arahan dosen |
 | `requirements_tugas_06.txt` | Daftar pustaka Python dan versinya |
 
 ## 4. Berkas yang tidak ditemukan

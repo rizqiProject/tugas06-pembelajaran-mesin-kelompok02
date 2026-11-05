@@ -1,13 +1,13 @@
-2026-11-05 16:39:14,406 | INFO | === EKSPERIMEN TUGAS 06 DIMULAI ===
-2026-11-05 16:39:14,406 | INFO | Python 3.12.0 | numpy 2.5.4 | pandas 3.1.1 | scikit-learn 1.9.1 | optuna 5.0.0
-2026-11-05 16:39:14,420 | INFO | Dataset dimuat: 169 baris, 10 kolom
-2026-11-05 16:39:14,441 | INFO | Label: 33 terlambat, 136 tepat waktu
-2026-11-05 16:39:14,485 | INFO | Split: train 135 (26 positif), test 34 (7 positif)
-2026-11-05 16:39:14,537 | INFO | Validasi historis T05: {'sumber_artefak': '/Users/admin/PEMBELAJARAN_MESIN_KELOMPOK_02/kode_tugas_sebelumnya/tugas_05/artifacts/model_final.joblib', 'sha256_artefak': '35699b81e4bbdf4c0f9c3c6539b9e2290b8ad27c912705536b0f585a32ac7c31', 'catatan': 'Artefak Tugas 05 dimuat hanya untuk memeriksa konsistensi, bukan untuk tuning Tugas 06.', 'status': 'berhasil dimuat', 'threshold_historis': 0.11, 'tp': 4, 'fn': 3, 'fp': 18, 'tn': 9, 'precision': 0.18181818181818182, 'recall': 0.5714285714285714, 'f1': 0.27586206896551724, 'cocok_dengan_laporan_tugas05': True}
-2026-11-05 16:39:14,538 | INFO | Optuna dimulai: 30 trials, TPE, Stratified 5-Fold
-2026-11-05 16:39:21,199 | INFO | Optuna selesai dalam 5.9 detik. Best CV Macro F1=0.5532
-2026-11-05 16:39:21,199 | INFO | Best params: {'criterion': 'gini', 'max_depth': 6, 'min_samples_leaf': 3, 'min_samples_split': 16, 'ccp_alpha': 0.0035355006645525064, 'class_weight': None, 'max_features': 'log2'}
-2026-11-05 16:39:59,768 | INFO | Analisis kesalahan: 19 FP, 2 FN
-2026-11-05 16:40:02,927 | INFO | === SELESAI ===
-2026-11-05 16:40:02,928 | INFO | Threshold F2 OOF baseline=0.06, tuned=0.05
-2026-11-05 16:40:02,928 | INFO | Test tuned @0.05: TP=5 FN=2 FP=19 TN=8 | P=0.208 R=0.714 F1=0.323 AP=0.190 AUC=0.413
+2026-11-05 17:04:38,445 | INFO | === EKSPERIMEN TUGAS 06 DIMULAI ===
+2026-11-05 17:04:38,445 | INFO | Python 3.12.0 | numpy 2.5.4 | pandas 3.1.1 | scikit-learn 1.9.1 | optuna 5.0.0
+2026-11-05 17:04:38,461 | INFO | Dataset dimuat: 169 baris, 10 kolom
+2026-11-05 17:04:38,481 | INFO | Label: 33 terlambat, 136 tepat waktu
+2026-11-05 17:04:38,525 | INFO | Split: train 135 (26 positif), test 34 (7 positif)
+2026-11-05 17:04:38,578 | INFO | Validasi historis T05: {'sumber_artefak': '/Users/admin/PEMBELAJARAN_MESIN_KELOMPOK_02/kode_tugas_sebelumnya/tugas_05/artifacts/model_final.joblib', 'sha256_artefak': '35699b81e4bbdf4c0f9c3c6539b9e2290b8ad27c912705536b0f585a32ac7c31', 'catatan': 'Artefak Tugas 05 dimuat hanya untuk memeriksa konsistensi, bukan untuk tuning Tugas 06.', 'status': 'berhasil dimuat', 'threshold_historis': 0.11, 'tp': 4, 'fn': 3, 'fp': 18, 'tn': 9, 'precision': 0.18181818181818182, 'recall': 0.5714285714285714, 'f1': 0.27586206896551724, 'cocok_dengan_laporan_tugas05': True}
+2026-11-05 17:04:38,579 | INFO | Optuna dimulai: 30 trials, TPE, Stratified 5-Fold
+2026-11-05 17:04:47,643 | INFO | Optuna selesai dalam 8.3 detik. Best CV Macro F1=0.5532
+2026-11-05 17:04:47,643 | INFO | Best params: {'criterion': 'gini', 'max_depth': 6, 'min_samples_leaf': 3, 'min_samples_split': 16, 'ccp_alpha': 0.0035355006645525064, 'class_weight': None, 'max_features': 'log2'}
+2026-11-05 17:05:21,053 | INFO | Analisis kesalahan: 19 FP, 2 FN
+2026-11-05 17:05:24,920 | INFO | === SELESAI ===
+2026-11-05 17:05:24,920 | INFO | Threshold F2 OOF baseline=0.06, tuned=0.05
+2026-11-05 17:05:24,920 | INFO | Test tuned @0.05: TP=5 FN=2 FP=19 TN=8 | P=0.208 R=0.714 F1=0.323 AP=0.190 AUC=0.413

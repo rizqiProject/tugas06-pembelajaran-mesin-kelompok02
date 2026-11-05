@@ -32,7 +32,10 @@ def tulis(lap, D):
             'pada setiap fold dilatih dari nol, termasuk imputasi, one-hot '
             'encoding, dan transformer antrean. Prediksi untuk baris validasi '
             'dikumpulkan sehingga setiap baris train mendapat satu skor OOF dari '
-            'model yang tidak melihat baris tersebut saat latih.')
+            'model yang tidak melihat baris tersebut saat latih. Implementasinya '
+            'memakai cross_val_predict dengan StratifiedKFold(n_splits=5, '
+            'shuffle=True, random_state=42) dan method="predict_proba" pada train.',
+            rata='left')
     lap.par('Ketiga, seluruh ambang dari 0,01 sampai 0,99 diuji pada skor OOF. '
             'Metrik utama adalah F2. F2 dipilih karena false negative dinilai lebih '
             'mahal secara operasional: berkas terlambat yang tidak masuk prioritas '
@@ -74,6 +77,11 @@ def tulis(lap, D):
             'paling banyak 50% data latih. Ambang 0,05 adalah titik dengan F2 OOF '
             'tertinggi secara keseluruhan. Keempatnya berasal dari data latih, bukan '
             'dari data uji.')
+    lap.par('Titik operasi ambang 0,50, 0,19, dan 0,05 dapat dibaca pada kurva ROC '
+            'dan Precision–Recall model After Tuning di Gambar 2. Kurva tersebut '
+            'tidak berubah ketika ambang digeser; yang berubah hanya posisi titik '
+            'operasi, confusion matrix, precision, recall, dan F1. Ini mempertegas '
+            'bahwa threshold tuning bukan pelatihan ulang model.')
 
     lap.h2('C.3 Kurva pemilihan ambang dari OOF')
     lap.gambar(fig / '03_threshold_tuning_oof.png', 6.25,
@@ -275,13 +283,18 @@ def tulis(lap, D):
     for model, t, ket in [('Before Tuning', 0.06, 'Sebelum tuning'),
                           ('After Tuning', 0.05, 'Sesudah tuning')]:
         r = ambil(model, t)
-        baris_meta.append([ket, f(r['average_precision']), f(r['roc_auc']),
-                           f(r['log_loss'])])
+        baris_meta.append([ket, f(r['f1']), f(r['average_precision']),
+                           f(r['roc_auc']), f(r['log_loss'])])
     lap.tabel(
-        ['Model', 'PR-AUC (AP)', 'ROC-AUC', 'Log-loss'],
-        baris_meta, widths=[2.2, 1.4, 1.3, 1.3], font=9,
-        aligns=['l', 'c', 'c', 'c'],
-        caption='Tabel 18. Metrik yang tidak bergantung pada ambang pada data uji.')
+        ['Model', 'F1', 'PR-AUC (AP)', 'ROC-AUC', 'Log-loss'],
+        baris_meta, widths=[1.7, 0.8, 1.3, 1.2, 1.2], font=9,
+        aligns=['l', 'c', 'c', 'c', 'c'],
+        caption='Tabel 18. Perbandingan metrik utama pada data uji. ROC-AUC, PR-AUC, '
+                'dan log-loss tidak bergantung pada ambang; F1 dihitung pada ambang '
+                'OOF masing-masing model.')
+    lap.par('Pada Tabel 18, F1 dihitung pada ambang OOF masing-masing, yaitu 0,06 '
+            'untuk baseline dan 0,05 untuk model hasil tuning. Pada ambang 0,50 yang '
+            'sama, F1 kedua model sama-sama 0,000 karena tidak ada prediksi positif.')
     lap.gambar(fig / '07_confusion_compare.png', 5.9,
                'Gambar 8. Confusion matrix before dan after tuning pada ambang 0,50 '
                'dan ambang OOF masing-masing.')

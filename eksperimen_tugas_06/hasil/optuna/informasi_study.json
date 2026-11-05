@@ -15,7 +15,7 @@
     "class_weight": null,
     "max_features": "log2"
   },
-  "durasi_detik": 5.919903993606567,
+  "durasi_detik": 8.312728881835938,
   "seed": 42,
   "parameter_importance": {
     "min_samples_leaf": 0.35392674406313807,

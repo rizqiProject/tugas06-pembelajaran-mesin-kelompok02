@@ -125,7 +125,6 @@ def tulis(lap, D):
         widths=[2.8, 3.6], font=8.5, aligns=['l', 'l'],
         caption='Tabel 25. Berkas keluaran Tugas 06.')
 
-    lap.halaman_putus()
     lap.h2('Lampiran B. Tangkapan layar prototipe Tugas 05')
     lap.par('Gambar 9 adalah tangkapan layar antarmuka prototipe yang dibangun '
             'pada Tugas 05 dan diwarisi sebagai artefak penelitian ini. Layar '

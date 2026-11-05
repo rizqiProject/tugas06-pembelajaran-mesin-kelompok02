@@ -55,6 +55,7 @@ Artefak Tugas 05 dimuat ulang dan diuji pada 34 berkas yang sama. Pada ambang hi
 ```text
 PEMBELAJARAN_MESIN_KELOMPOK_02/
 ├── AUDIT_FILE_PROYEK_TUGAS_06.md
+├── CEK_KESESUAIAN_TEMPLATE_TUGAS_06.md
 ├── README_TUGAS_06.md
 ├── data/
 │   └── berkas_notaris_terisi (2).csv
@@ -137,6 +138,7 @@ Setelah repositori publik tersedia, tambahkan tautannya pada halaman Lampiran la
 3. Bagian F masih memerlukan tanda tangan basah seluruh anggota.
 4. Repositori Git lokal sudah diinisialisasi dan di-commit. Tautan repositori publik GitHub/Google Colab belum tersedia karena akun kelompok belum dihubungkan; folder ini siap diunggah.
 5. Dataset sumber tidak diubah. SHA-256 dataset: `686aa269511d6eb26ad661ebfde499ffbfd64383de4e84e93ea54ab23905785b`.
+6. Checklist kesesuaian template dan arahan dosen ada di `CEK_KESESUAIAN_TEMPLATE_TUGAS_06.md`.
 
 ## 7. Berkas utama laporan
 

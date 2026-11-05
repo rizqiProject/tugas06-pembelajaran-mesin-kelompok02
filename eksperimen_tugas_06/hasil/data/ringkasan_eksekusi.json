@@ -1,7 +1,7 @@
 {
-  "waktu_mulai": "2026-11-05T16:39:14.406040",
-  "waktu_selesai": "2026-11-05T16:40:02.884373",
-  "durasi_total_detik": 48.478341,
+  "waktu_mulai": "2026-11-05T17:04:38.445664",
+  "waktu_selesai": "2026-11-05T17:05:24.884835",
+  "durasi_total_detik": 46.439179,
   "dataset": {
     "n": 169,
     "positif": 33,
@@ -40,7 +40,7 @@
       "class_weight": null,
       "max_features": "log2"
     },
-    "durasi_detik": 5.919903993606567,
+    "durasi_detik": 8.312728881835938,
     "seed": 42,
     "parameter_importance": {
       "min_samples_leaf": 0.35392674406313807,

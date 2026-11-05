@@ -325,15 +325,22 @@ def tulis(lap, D):
             'kelas terlambat, yaitu 0,206. Artinya, berkas dengan skor tertinggi '
             'belum tentu lebih banyak berisi keterlambatan.')
     lap.gambar(fig / '02_roc_pr.png', 6.25,
-               'Gambar 2. Kurva ROC dan Precision–Recall model Before dan After '
-               'Tuning pada data uji. Titik merah menandai ambang 0,50, 0,25, dan '
-               '0,05 untuk model After Tuning.')
-    lap.par('Kurva ROC dan PR dihitung dari skor yang sama untuk semua ambang. '
-            'Mengubah ambang tidak mengubah ROC-AUC atau PR-AUC; yang berubah '
-            'hanya titik potong dan confusion matrix. Karena itu kenaikan F1 setelah '
-            'threshold tuning bukan bukti bahwa model menjadi lebih pintar '
+               'Gambar 2. Kurva ROC dan Precision–Recall model After Tuning pada '
+               'data uji. Titik merah menandai ambang 0,50 (default), 0,19 '
+               '(operasional), dan 0,05 (optimum F2). Pada ambang 0,50 tidak ada '
+               'prediksi positif, sehingga titik PR berada di (0,0).')
+    lap.par('Kurva ROC dan PR model After Tuning dihitung dari skor yang sama untuk '
+            'semua ambang. Mengubah ambang tidak mengubah ROC-AUC atau PR-AUC; yang '
+            'berubah hanya titik operasi dan confusion matrix. Karena itu kenaikan '
+            'F1 setelah threshold tuning bukan bukti bahwa model menjadi lebih pintar '
             'memisahkan kelas. Ia hanya bukti bahwa titik operasi digeser ke arah '
-            'yang lebih sesuai dengan tujuan recall.')
+            'yang lebih sesuai dengan tujuan recall. Perbandingan before vs after '
+            'untuk ROC-AUC, PR-AUC, F1, dan log-loss disajikan terpisah pada Tabel 18 '
+            'agar perubahan model tidak tertukar dengan perubahan ambang.')
+    lap.par('Titik 0,19 dan 0,05 pada Gambar 2 menunjukkan trade-off yang dibahas di '
+            'Bagian C. Ambang 0,05 menaikkan recall, tetapi titik operasinya bergerak '
+            'ke kanan bawah karena lebih banyak alarm palsu. Ambang 0,19 lebih '
+            'konservatif dan lebih dekat ke kapasitas pemeriksaan yang wajar.')
     lap.par('Nilai ROC-AUC yang rendah juga perlu dibaca bersama hasil validasi '
             'silang. Pada CV train, ROC-AUC model After Tuning adalah 0,554 ± 0,208, '
             'sedikit di atas acak. Pada data uji, nilainya 0,413. Perbedaan arah ini '

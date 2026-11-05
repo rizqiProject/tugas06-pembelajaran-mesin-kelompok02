@@ -735,41 +735,45 @@ def main():
     fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     simpan_grafik(GRAFIK / '01_confusion_matrix_tuned.png')
 
-    # 2. ROC dan PR.
+    # 2. ROC dan PR model After Tuning: satu kurva per jenis, titik operasi
+    #    default dan optimal ditandai. Kurva before/after ada pada Tabel 18.
     fig, axes = plt.subplots(1, 2, figsize=(10.6, 4.3))
-    for nama, p, warna in [('Before Tuning', p_test_base, GRAY),
-                           ('After Tuning', p_test_tuned, BLUE)]:
-        fpr, tpr, _ = roc_curve(y_test, p)
-        pr, rc, _ = precision_recall_curve(y_test, p)
-        axes[0].plot(fpr, tpr, color=warna, lw=2,
-                     label=f'{nama} (AUC {roc_auc_score(y_test, p):.3f})')
-        axes[1].step(rc, pr, where='post', color=warna, lw=2,
-                     label=f'{nama} (AP {average_precision_score(y_test, p):.3f})')
-    axes[0].plot([0, 1], [0, 1], '--', color='#a0a8b0', lw=1)
+    fpr, tpr, _ = roc_curve(y_test, p_test_tuned)
+    pr, rc, _ = precision_recall_curve(y_test, p_test_tuned)
+    axes[0].plot(fpr, tpr, color=BLUE, lw=2,
+                 label=f'After Tuning (AUC {roc_auc_score(y_test, p_test_tuned):.3f})')
+    axes[1].step(rc, pr, where='post', color=BLUE, lw=2,
+                 label=f'After Tuning (AP '
+                       f'{average_precision_score(y_test, p_test_tuned):.3f})')
+    axes[0].plot([0, 1], [0, 1], '--', color='#a0a8b0', lw=1,
+                 label='Acak')
     axes[1].axhline(y_test.mean(), ls='--', color='#a0a8b0',
                     label=f'Prevalensi {y_test.mean():.3f}')
-    # Tandai threshold pada kurva PR/ROC model tuned.
-    for t, gaya in [(0.50, ':'), (t_f2_tuned, '--'), (t_f1_tuned, '-.')]:
+    # Tandai titik operasi: default 0,50; operasional 0,19; optimum F2.
+    for t, offset_roc, offset_pr in [
+            (0.50, (7, 8), (7, 8)),
+            (t_guard, (7, -12), (7, -14)),
+            (t_f2_tuned, (-16, 8), (-16, 8))]:
         pred = (p_test_tuned >= t).astype(int)
         tn, fp_, fn_, tp_ = confusion_matrix(y_test, pred, labels=[0, 1]).ravel()
         tpr_ = tp_ / (tp_ + fn_) if (tp_ + fn_) else 0
         fpr_ = fp_ / (fp_ + tn) if (fp_ + tn) else 0
-        prec_ = tp_ / (tp_ + fp_) if (tp_ + fp_) else 1
+        prec_ = tp_ / (tp_ + fp_) if (tp_ + fp_) else 0
         rec_ = tpr_
-        axes[0].scatter([fpr_], [tpr_], s=38, color=RED, zorder=5)
-        axes[1].scatter([rec_], [prec_], s=38, color=RED, zorder=5)
+        axes[0].scatter([fpr_], [tpr_], s=42, color=RED, zorder=5)
+        axes[1].scatter([rec_], [prec_], s=42, color=RED, zorder=5)
         axes[0].annotate(f'{t:.2f}', (fpr_, tpr_), textcoords='offset points',
-                         xytext=(6, 4), fontsize=7, color=RED)
+                         xytext=offset_roc, fontsize=7.5, color=RED)
         axes[1].annotate(f'{t:.2f}', (rec_, prec_), textcoords='offset points',
-                         xytext=(6, 4), fontsize=7, color=RED)
+                         xytext=offset_pr, fontsize=7.5, color=RED)
     for ax in axes:
         ax.set(xlim=(0, 1), ylim=(0, 1.03))
-        ax.legend(fontsize=7.5, loc='lower left')
+        ax.legend(fontsize=7.5, loc='upper left')
         rapikan_sumbu(ax, 'both')
     axes[0].set(xlabel='False Positive Rate', ylabel='True Positive Rate',
-                title=f'ROC pada {len(y_test)} berkas uji')
+                title=f'ROC model After Tuning pada {len(y_test)} berkas uji')
     axes[1].set(xlabel='Recall (Terlambat)', ylabel='Precision (Terlambat)',
-                title='Precision-Recall pada data uji')
+                title='Precision-Recall model After Tuning')
     fig.tight_layout()
     simpan_grafik(GRAFIK / '02_roc_pr.png')
 
