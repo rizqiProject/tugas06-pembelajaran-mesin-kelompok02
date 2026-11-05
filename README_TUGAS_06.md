@@ -56,8 +56,10 @@ Artefak Tugas 05 dimuat ulang dan diuji pada 34 berkas yang sama. Pada ambang hi
 PEMBELAJARAN_MESIN_KELOMPOK_02/
 ├── AUDIT_FILE_PROYEK_TUGAS_06.md
 ├── CEK_KESESUAIAN_TEMPLATE_TUGAS_06.md
+├── CHECKLIST_UNGGAH_TUGAS_06.md
 ├── PANDUAN_GITHUB_COLAB.md
 ├── Jalankan_Tugas06_Colab.ipynb
+├── TUGAS_06_KELOMPOK_02_LINK_REPOSITORI.txt
 ├── README_TUGAS_06.md
 ├── data/
 │   └── berkas_notaris_terisi (2).csv

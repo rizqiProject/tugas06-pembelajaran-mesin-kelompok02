@@ -1,0 +1,21 @@
+TUGAS 06 PEMBELAJARAN MESIN - KELOMPOK 02
+KANTOR NOTARIS & PPAT ARIES BUWANA
+
+Repositori publik GitHub:
+https://github.com/rizqiProject/tugas06-pembelajaran-mesin-kelompok02
+
+Branch utama: main
+Status: publik, dapat dibuka tanpa login.
+
+Isi repositori:
+- laporan Word dan PDF,
+- kode eksperimen,
+- hasil Optuna dan grafik,
+- model .joblib,
+- README, audit, dan panduan menjalankan ulang.
+
+Notebook Colab (opsional):
+https://colab.research.google.com/github/rizqiProject/tugas06-pembelajaran-mesin-kelompok02/blob/main/Jalankan_Tugas06_Colab.ipynb
+
+Catatan: tautan Colab hanya berfungsi setelah branch utama repositori
+diatur ke main. Jika belum, gunakan tautan repositori GitHub di atas.
