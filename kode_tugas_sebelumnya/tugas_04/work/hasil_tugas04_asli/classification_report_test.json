@@ -1,0 +1,110 @@
+{
+  "baseline": {
+    "Tepat Waktu": {
+      "precision": 0.7619047619047619,
+      "recall": 0.5925925925925926,
+      "f1-score": 0.6666666666666666,
+      "support": 27.0
+    },
+    "Terlambat": {
+      "precision": 0.15384615384615385,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.2,
+      "support": 7.0
+    },
+    "accuracy": 0.5294117647058824,
+    "macro avg": {
+      "precision": 0.45787545787545786,
+      "recall": 0.43915343915343913,
+      "f1-score": 0.43333333333333335,
+      "support": 34.0
+    },
+    "weighted avg": {
+      "precision": 0.636716224951519,
+      "recall": 0.5294117647058824,
+      "f1-score": 0.5705882352941176,
+      "support": 34.0
+    }
+  },
+  "tuned_050": {
+    "Tepat Waktu": {
+      "precision": 0.8,
+      "recall": 0.5925925925925926,
+      "f1-score": 0.6808510638297872,
+      "support": 27.0
+    },
+    "Terlambat": {
+      "precision": 0.21428571428571427,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.2857142857142857,
+      "support": 7.0
+    },
+    "accuracy": 0.5588235294117647,
+    "macro avg": {
+      "precision": 0.5071428571428571,
+      "recall": 0.5105820105820106,
+      "f1-score": 0.48328267477203646,
+      "support": 34.0
+    },
+    "weighted avg": {
+      "precision": 0.6794117647058824,
+      "recall": 0.5588235294117647,
+      "f1-score": 0.5994993742177721,
+      "support": 34.0
+    }
+  },
+  "tuned_025": {
+    "Tepat Waktu": {
+      "precision": 0.8,
+      "recall": 0.4444444444444444,
+      "f1-score": 0.5714285714285714,
+      "support": 27.0
+    },
+    "Terlambat": {
+      "precision": 0.21052631578947367,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.3076923076923077,
+      "support": 7.0
+    },
+    "accuracy": 0.47058823529411764,
+    "macro avg": {
+      "precision": 0.5052631578947369,
+      "recall": 0.5079365079365079,
+      "f1-score": 0.43956043956043955,
+      "support": 34.0
+    },
+    "weighted avg": {
+      "precision": 0.6786377708978328,
+      "recall": 0.47058823529411764,
+      "f1-score": 0.5171299288946347,
+      "support": 34.0
+    }
+  },
+  "tuned_oof": {
+    "Tepat Waktu": {
+      "precision": 0.875,
+      "recall": 0.25925925925925924,
+      "f1-score": 0.4,
+      "support": 27.0
+    },
+    "Terlambat": {
+      "precision": 0.23076923076923078,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.36363636363636365,
+      "support": 7.0
+    },
+    "accuracy": 0.38235294117647056,
+    "macro avg": {
+      "precision": 0.5528846153846154,
+      "recall": 0.5582010582010581,
+      "f1-score": 0.38181818181818183,
+      "support": 34.0
+    },
+    "weighted avg": {
+      "precision": 0.7423642533936652,
+      "recall": 0.38235294117647056,
+      "f1-score": 0.3925133689839572,
+      "support": 34.0
+    }
+  }
+}

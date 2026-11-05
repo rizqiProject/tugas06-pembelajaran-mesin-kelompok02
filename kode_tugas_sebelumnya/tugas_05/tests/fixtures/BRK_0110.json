@@ -1,0 +1,11 @@
+{
+  "record": {
+    "id_berkas": "BRK_0110",
+    "tgl_masuk": "2025-12-30",
+    "kategori_akta": "Pendirian_PT",
+    "jumlah_penghadap": 4,
+    "sla_hari": 14,
+    "tgl_rups": null
+  },
+  "explain": true
+}

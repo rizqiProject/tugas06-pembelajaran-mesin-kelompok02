@@ -1,0 +1,305 @@
+[
+  {
+    "id_berkas": "BRK_0110",
+    "actual": 0,
+    "duration_days": 10,
+    "raw": {
+      "no_urut": 110,
+      "no_bulanan": 7,
+      "tgl_akta": "2026-01-08",
+      "kategori_akta": "Pendirian_PT",
+      "jumlah_penghadap": 4,
+      "tgl_rups": null,
+      "tgl_masuk": "2025-12-30",
+      "tgl_selesai": "2026-01-09",
+      "sla_hari": 14
+    },
+    "response": {
+      "id_berkas": "BRK_0110",
+      "prediction": 1,
+      "label": "Perlu pemeriksaan staf",
+      "model_score": 0.4117647058823529,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Skor mencapai ambang pemeriksaan"
+      ],
+      "warnings": [],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 0,
+      "derived_features": {
+        "jumlah_penghadap": 4,
+        "sla_hari": 14,
+        "antrean_berjalan": 0,
+        "ada_rups": 0,
+        "bulan_sin": -2.4492935982947064e-16,
+        "bulan_cos": 1.0,
+        "kategori_akta": "Pendirian_PT",
+        "hari_masuk": "Selasa"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": 0.20980325389653443,
+        "reconstructed_probability": 0.4117647066594579,
+        "additivity_error": 7.771049914673256e-10,
+        "features": [
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": 1.0,
+            "shap": 0.1684772004187107
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 0.0,
+            "shap": 0.02010130453854799
+          },
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -2.4492935982947064e-16,
+            "shap": 0.013819445632398128
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 0.0,
+            "shap": 0.007405303306877613
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 9.547491
+    },
+    "leaf_id": 11,
+    "leaf_train_n": 17,
+    "leaf_class_distribution": [
+      0.5882352941176471,
+      0.4117647058823529
+    ],
+    "path": [
+      {
+        "feature": "bulan_cos",
+        "value": 1.0,
+        "operator": ">",
+        "boundary": 0.6830126941204071
+      },
+      {
+        "feature": "kategori_akta_PKR_PT",
+        "value": 0.0,
+        "operator": "<=",
+        "boundary": 0.5
+      }
+    ]
+  },
+  {
+    "id_berkas": "BRK_0075",
+    "actual": 1,
+    "duration_days": 18,
+    "raw": {
+      "no_urut": 75,
+      "no_bulanan": 5,
+      "tgl_akta": "2025-08-20",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 3,
+      "tgl_rups": null,
+      "tgl_masuk": "2025-08-14",
+      "tgl_selesai": "2025-09-01",
+      "sla_hari": 14
+    },
+    "response": {
+      "id_berkas": "BRK_0075",
+      "prediction": 0,
+      "label": "Tidak terpicu alarm",
+      "model_score": 0.045454545454545456,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": false,
+      "review_reasons": [],
+      "warnings": [],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 3,
+      "derived_features": {
+        "jumlah_penghadap": 3,
+        "sla_hari": 14,
+        "antrean_berjalan": 3,
+        "ada_rups": 0,
+        "bulan_sin": -0.8660254037844384,
+        "bulan_cos": -0.5000000000000004,
+        "kategori_akta": "PKR_PT",
+        "hari_masuk": "Kamis"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": -0.1565069124288857,
+        "reconstructed_probability": 0.045454540334037785,
+        "additivity_error": 5.120507670652863e-09,
+        "features": [
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -0.8660254037844384,
+            "shap": -0.06843750335276128
+          },
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": -0.5000000000000004,
+            "shap": -0.05413413643836975
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 1.0,
+            "shap": -0.03752841152250767
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 1.0,
+            "shap": 0.003593138884752989
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 8.150253
+    },
+    "leaf_id": 9,
+    "leaf_train_n": 22,
+    "leaf_class_distribution": [
+      0.9545454545454546,
+      0.045454545454545456
+    ],
+    "path": [
+      {
+        "feature": "bulan_cos",
+        "value": -0.5000000000000004,
+        "operator": "<=",
+        "boundary": 0.6830126941204071
+      },
+      {
+        "feature": "hari_masuk_Kamis",
+        "value": 1.0,
+        "operator": ">",
+        "boundary": 0.5
+      }
+    ]
+  },
+  {
+    "id_berkas": "BRK_0168",
+    "actual": 1,
+    "duration_days": 10,
+    "raw": {
+      "no_urut": 168,
+      "no_bulanan": 1,
+      "tgl_akta": "2026-10-02",
+      "kategori_akta": "Lainnya",
+      "jumlah_penghadap": 2,
+      "tgl_rups": null,
+      "tgl_masuk": "2026-10-02",
+      "tgl_selesai": "2026-10-12",
+      "sla_hari": 7
+    },
+    "response": {
+      "id_berkas": "BRK_0168",
+      "prediction": 0,
+      "label": "Tidak terpicu alarm",
+      "model_score": 0.0,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Masukan berbeda dari cakupan data latih"
+      ],
+      "warnings": [
+        "Tanggal masuk di luar periode train"
+      ],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 0,
+      "derived_features": {
+        "jumlah_penghadap": 2,
+        "sla_hari": 7,
+        "antrean_berjalan": 0,
+        "ada_rups": 0,
+        "bulan_sin": -0.8660254037844386,
+        "bulan_cos": 0.5000000000000001,
+        "kategori_akta": "Lainnya",
+        "hari_masuk": "Jumat"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": -0.20196145657449963,
+        "reconstructed_probability": -3.811576138046391e-09,
+        "additivity_error": 3.811576138046391e-09,
+        "features": [
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -0.8660254037844386,
+            "shap": -0.126354169100523
+          },
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": 0.5000000000000001,
+            "shap": -0.07198098689317703
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 0.0,
+            "shap": -0.006464053317904473
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 0.0,
+            "shap": 0.0028377527371048926
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 8.546561
+    },
+    "leaf_id": 5,
+    "leaf_train_n": 17,
+    "leaf_class_distribution": [
+      1.0,
+      0.0
+    ],
+    "path": [
+      {
+        "feature": "bulan_cos",
+        "value": 0.5000000000000001,
+        "operator": "<=",
+        "boundary": 0.6830126941204071
+      },
+      {
+        "feature": "hari_masuk_Kamis",
+        "value": 0.0,
+        "operator": "<=",
+        "boundary": 0.5
+      },
+      {
+        "feature": "bulan_sin",
+        "value": -0.8660254037844386,
+        "operator": "<=",
+        "boundary": -0.6830126941204071
+      },
+      {
+        "feature": "bulan_sin",
+        "value": -0.8660254037844386,
+        "operator": ">",
+        "boundary": -0.9330126941204071
+      }
+    ]
+  }
+]

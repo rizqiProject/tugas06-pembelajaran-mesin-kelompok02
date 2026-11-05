@@ -1,0 +1,64 @@
+{
+  "id_berkas": "BRK_0273",
+  "index_test_0_based": 32,
+  "row_csv_1_based_header_excluded": 273,
+  "row_analyzed_subset_1_based": 6,
+  "source": "asli",
+  "selection_rule": "TP tambahan dari threshold moving",
+  "base": 0.38114514815416706,
+  "sum_shap": -0.057882322892546655,
+  "p": 0.3232628398791541,
+  "threshold": 0.11,
+  "y": 1,
+  "pred_050": 0,
+  "pred_final": 1,
+  "shap_additivity_max_error": 2.684373168193588e-08,
+  "background_n": 100,
+  "background_candidate_n": 135,
+  "features_raw": {
+    "jumlah_penghadap": 2,
+    "sla_hari": 10,
+    "beban_7hari": 13,
+    "jumlah_dokumen": 8,
+    "dokumen_lengkap": 1,
+    "perlu_pengesahan_kemenkum": 1,
+    "perlu_pajak": 0,
+    "ada_rups_awal": 0,
+    "bulan_sin": 1.2246467991473532e-16,
+    "bulan_cos": -1.0,
+    "kategori_akta": "Perubahan_CV",
+    "hari_masuk": "Rabu",
+    "kanal_masuk": "langsung",
+    "petugas": "Staf_C"
+  },
+  "decision_path": [
+    {
+      "fitur": "beban_7hari",
+      "nilai": 13.0,
+      "batas": 11.5,
+      "arah": ">"
+    },
+    {
+      "fitur": "jumlah_penghadap",
+      "nilai": 2.0,
+      "batas": 5.5,
+      "arah": "<="
+    },
+    {
+      "fitur": "bulan_cos",
+      "nilai": -1.0,
+      "batas": -0.6830126941204071,
+      "arah": "<="
+    },
+    {
+      "fitur": "beban_7hari",
+      "nilai": 13.0,
+      "batas": 15.5,
+      "arah": "<="
+    }
+  ],
+  "features_encoded_n": 36,
+  "active_shap_features_n": 5,
+  "model_depth": 4,
+  "model_leaves": 9
+}

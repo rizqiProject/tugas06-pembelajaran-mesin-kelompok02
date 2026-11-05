@@ -1,0 +1,19 @@
+AUDIT {"asli": {"size": 169, "sum": 35}}
+SPLIT train 135 pos 28 test 34 pos 7
+NESTED 1 AP 0.2722 threshold 0.29 params {'model__ccp_alpha': 0.02, 'model__class_weight': 'balanced', 'model__max_depth': 5, 'model__min_samples_leaf': 2, 'model__min_samples_split': 2}
+NESTED 2 AP 0.6098 threshold 0.15 params {'model__ccp_alpha': 0.0, 'model__class_weight': None, 'model__max_depth': 5, 'model__min_samples_leaf': 2, 'model__min_samples_split': 10}
+NESTED 3 AP 0.3611 threshold 0.5 params {'model__ccp_alpha': 0.0, 'model__class_weight': 'balanced', 'model__max_depth': 5, 'model__min_samples_leaf': 5, 'model__min_samples_split': 2}
+NESTED 4 AP 0.4028 threshold 0.43 params {'model__ccp_alpha': 0.0, 'model__class_weight': 'balanced', 'model__max_depth': 4, 'model__min_samples_leaf': 5, 'model__min_samples_split': 2}
+NESTED 5 AP 0.2593 threshold 0.11 params {'model__ccp_alpha': 0.01, 'model__class_weight': 'balanced', 'model__max_depth': 5, 'model__min_samples_leaf': 2, 'model__min_samples_split': 2}
+FROZEN {"best_params": {"model__ccp_alpha": 0.002, "model__class_weight": "balanced", "model__max_depth": 4, "model__min_samples_leaf": 2, "model__min_samples_split": 2}, "best_inner_cv_ap": 0.4436444215112946, "threshold_oof": 0.11, "n_candidates": 320, "inner_folds": 5, "outer_folds": 5, "seed": 42, "threshold_objective": "F2 maksimum; tie precision lalu threshold terbesar", "threshold_search": [0.1, 0.75, 0.01], "cv_refit_metric": "average_precision", "statement": "Model dan threshold dibekukan sebelum evaluasi holdout", "features": ["jumlah_penghadap", "sla_hari", "beban_7hari", "jumlah_dokumen", "dokumen_lengkap", "perlu_pengesahan_kemenkum", "perlu_pajak", "ada_rups_awal", "bulan_sin", "bulan_cos", "kategori_akta", "hari_masuk", "kanal_masuk", "petugas"]}
+      model partisi  accuracy  precision  recall     f1     ap  tp  fn  fp  tn
+Baseline v5   Train    0.6963     0.3934  0.8571 0.5393 0.5632  24   4  37  70
+Baseline v5    Test    0.5294     0.1538  0.2857 0.2000 0.3465   2   5  11  16
+ Tuned 0.50   Train    0.6963     0.3968  0.8929 0.5495 0.6445  25   3  38  69
+ Tuned 0.50    Test    0.5588     0.2143  0.4286 0.2857 0.4826   3   4  11  16
+ Tuned 0.25   Train    0.6444     0.3611  0.9286 0.5200 0.6445  26   2  46  61
+ Tuned 0.25    Test    0.4706     0.2105  0.5714 0.3077 0.4826   4   3  15  12
+  Tuned OOF   Train    0.4370     0.2692  1.0000 0.4242 0.6445  28   0  76  31
+  Tuned OOF    Test    0.3824     0.2308  0.8571 0.3636 0.4826   6   1  20   7
+SHAP additivity max error 2.684373168193588e-08 case BRK_0273
+SELESAI /workspace/scratch/1179d8c0564d/work/hasil_tugas04_asli detik 142.4

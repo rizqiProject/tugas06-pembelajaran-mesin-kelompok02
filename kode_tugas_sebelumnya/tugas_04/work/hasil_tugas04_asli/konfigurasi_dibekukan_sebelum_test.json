@@ -1,0 +1,39 @@
+{
+  "best_params": {
+    "model__ccp_alpha": 0.002,
+    "model__class_weight": "balanced",
+    "model__max_depth": 4,
+    "model__min_samples_leaf": 2,
+    "model__min_samples_split": 2
+  },
+  "best_inner_cv_ap": 0.4436444215112946,
+  "threshold_oof": 0.11,
+  "n_candidates": 320,
+  "inner_folds": 5,
+  "outer_folds": 5,
+  "seed": 42,
+  "threshold_objective": "F2 maksimum; tie precision lalu threshold terbesar",
+  "threshold_search": [
+    0.1,
+    0.75,
+    0.01
+  ],
+  "cv_refit_metric": "average_precision",
+  "statement": "Model dan threshold dibekukan sebelum evaluasi holdout",
+  "features": [
+    "jumlah_penghadap",
+    "sla_hari",
+    "beban_7hari",
+    "jumlah_dokumen",
+    "dokumen_lengkap",
+    "perlu_pengesahan_kemenkum",
+    "perlu_pajak",
+    "ada_rups_awal",
+    "bulan_sin",
+    "bulan_cos",
+    "kategori_akta",
+    "hari_masuk",
+    "kanal_masuk",
+    "petugas"
+  ]
+}

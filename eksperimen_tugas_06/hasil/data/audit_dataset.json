@@ -1,0 +1,33 @@
+{
+  "file": "/Users/admin/PEMBELAJARAN_MESIN_KELOMPOK_02/data/berkas_notaris_terisi (2).csv",
+  "sha256": "686aa269511d6eb26ad661ebfde499ffbfd64383de4e84e93ea54ab23905785b",
+  "n_baris": 169,
+  "n_kolom": 12,
+  "positif_terlambat": 33,
+  "negatif_tepat_waktu": 136,
+  "proporsi_positif": 0.1952662721893491,
+  "duplikat_id": 0,
+  "tanggal_rups_terisi": 13,
+  "tanggal_rups_setelah_masuk": 10,
+  "durasi_min": 2,
+  "durasi_maks": 33,
+  "sla_min": 5,
+  "sla_maks": 40,
+  "kategori_akta": [
+    "AJB_Saham",
+    "Keputusan_Yayasan",
+    "Kuasa",
+    "Lainnya",
+    "PKR_PT",
+    "PPJB",
+    "Pendirian_CV",
+    "Pendirian_Lain",
+    "Pendirian_PT",
+    "Pendirian_Yayasan",
+    "Perjanjian_Hutang",
+    "Perjanjian_Lain",
+    "Perubahan_CV",
+    "Waris_Wasiat"
+  ],
+  "rumus_label": "terlambat = 1 jika (tgl_selesai - tgl_masuk) hari > sla_hari"
+}

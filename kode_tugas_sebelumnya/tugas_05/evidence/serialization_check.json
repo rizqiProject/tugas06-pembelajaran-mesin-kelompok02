@@ -1,0 +1,14 @@
+{
+  "n": 34,
+  "max_abs_probability_error_vs_csv": 5.551115123125783e-17,
+  "serialization_roundtrip_error": 0.0,
+  "labels_identical": true,
+  "source_artifact_params": {
+    "model__ccp_alpha": 0.0,
+    "model__class_weight": null,
+    "model__max_depth": 4,
+    "model__min_samples_leaf": 15,
+    "model__min_samples_split": 2
+  },
+  "default_threshold": 0.11
+}

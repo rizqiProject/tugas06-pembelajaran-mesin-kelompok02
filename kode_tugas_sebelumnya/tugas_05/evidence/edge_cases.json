@@ -1,0 +1,443 @@
+[
+  {
+    "name": "Body kosong",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.record",
+          "message": "Field required",
+          "type": "missing"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "Kolom wajib hilang",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.record.jumlah_penghadap",
+          "message": "Field required",
+          "type": "missing"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "String pada numerik",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.record.jumlah_penghadap",
+          "message": "Input should be a valid integer",
+          "type": "int_type"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "Jumlah penghadap negatif",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.record.jumlah_penghadap",
+          "message": "Input should be greater than or equal to 1",
+          "type": "greater_than_equal"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "Jumlah melebihi batas teknis",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.record.jumlah_penghadap",
+          "message": "Input should be less than or equal to 100",
+          "type": "less_than_equal"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "SLA nol",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.record.sla_hari",
+          "message": "Input should be greater than or equal to 1",
+          "type": "greater_than_equal"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "Tanggal tidak valid",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.record.tgl_masuk",
+          "message": "Value error, day is out of range for month",
+          "type": "value_error"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "Tanggal selesai berkas baru disisipkan",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.record.tgl_selesai",
+          "message": "Extra inputs are not permitted",
+          "type": "extra_forbidden"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "Ambang di luar rentang",
+    "expected_status": 422,
+    "actual_status": 422,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "detail": [
+        {
+          "field": "body.threshold",
+          "message": "Input should be less than or equal to 0.99",
+          "type": "less_than_equal"
+        }
+      ],
+      "message": "Masukan perlu diperbaiki."
+    }
+  },
+  {
+    "name": "Kategori belum dilatih",
+    "expected_status": 200,
+    "actual_status": 200,
+    "passed": true,
+    "warnings": [
+      "Kategori belum terdapat pada encoder train"
+    ],
+    "response": {
+      "id_berkas": "BRK_0024",
+      "prediction": 1,
+      "label": "Perlu pemeriksaan staf",
+      "model_score": 0.1875,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Skor mencapai ambang pemeriksaan",
+        "Masukan berbeda dari cakupan data latih"
+      ],
+      "warnings": [
+        "Kategori belum terdapat pada encoder train"
+      ],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 1,
+      "derived_features": {
+        "jumlah_penghadap": 2,
+        "sla_hari": 10,
+        "antrean_berjalan": 1,
+        "ada_rups": 0,
+        "bulan_sin": -1.0,
+        "bulan_cos": -1.8369701987210297e-16,
+        "kategori_akta": "Layanan_Baru",
+        "hari_masuk": "Selasa"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": -0.01446145623922348,
+        "reconstructed_probability": 0.1874999965237,
+        "additivity_error": 3.4762999978621423e-09,
+        "features": [
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": -1.8369701987210297e-16,
+            "shap": -0.05073098689317703
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 0.0,
+            "shap": 0.02221275307238102
+          },
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -1.0,
+            "shap": 0.020520830899477004
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 0.0,
+            "shap": -0.006464053317904473
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 10.470306
+    }
+  },
+  {
+    "name": "RUPS setelah penerimaan",
+    "expected_status": 200,
+    "actual_status": 200,
+    "passed": true,
+    "warnings": [
+      "Tanggal RUPS sesudah penerimaan tidak dipakai sebagai informasi awal."
+    ],
+    "response": {
+      "id_berkas": "BRK_0024",
+      "prediction": 1,
+      "label": "Perlu pemeriksaan staf",
+      "model_score": 0.1875,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Skor mencapai ambang pemeriksaan"
+      ],
+      "warnings": [
+        "Tanggal RUPS sesudah penerimaan tidak dipakai sebagai informasi awal."
+      ],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 1,
+      "derived_features": {
+        "jumlah_penghadap": 2,
+        "sla_hari": 10,
+        "antrean_berjalan": 1,
+        "ada_rups": 0,
+        "bulan_sin": -1.0,
+        "bulan_cos": -1.8369701987210297e-16,
+        "kategori_akta": "AJB_Saham",
+        "hari_masuk": "Selasa"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": -0.01446145623922348,
+        "reconstructed_probability": 0.1874999965237,
+        "additivity_error": 3.4762999978621423e-09,
+        "features": [
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": -1.8369701987210297e-16,
+            "shap": -0.05073098689317703
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 0.0,
+            "shap": 0.02221275307238102
+          },
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -1.0,
+            "shap": 0.020520830899477004
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 0.0,
+            "shap": -0.006464053317904473
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 9.58869
+    }
+  },
+  {
+    "name": "Nilai valid di luar rentang train",
+    "expected_status": 200,
+    "actual_status": 200,
+    "passed": true,
+    "warnings": [
+      "jumlah_penghadap di luar rentang train 1-14",
+      "sla_hari di luar rentang train 5-40"
+    ],
+    "response": {
+      "id_berkas": "BRK_0024",
+      "prediction": 1,
+      "label": "Perlu pemeriksaan staf",
+      "model_score": 0.1875,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Skor mencapai ambang pemeriksaan",
+        "Masukan berbeda dari cakupan data latih"
+      ],
+      "warnings": [
+        "jumlah_penghadap di luar rentang train 1-14",
+        "sla_hari di luar rentang train 5-40"
+      ],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 1,
+      "derived_features": {
+        "jumlah_penghadap": 100,
+        "sla_hari": 365,
+        "antrean_berjalan": 1,
+        "ada_rups": 0,
+        "bulan_sin": -1.0,
+        "bulan_cos": -1.8369701987210297e-16,
+        "kategori_akta": "AJB_Saham",
+        "hari_masuk": "Selasa"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": -0.01446145623922348,
+        "reconstructed_probability": 0.1874999965237,
+        "additivity_error": 3.4762999978621423e-09,
+        "features": [
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": -1.8369701987210297e-16,
+            "shap": -0.05073098689317703
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 0.0,
+            "shap": 0.02221275307238102
+          },
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -1.0,
+            "shap": 0.020520830899477004
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 0.0,
+            "shap": -0.006464053317904473
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 9.102922
+    }
+  },
+  {
+    "name": "Histori kosong",
+    "expected_status": 200,
+    "actual_status": 200,
+    "passed": true,
+    "warnings": [],
+    "response": {
+      "id_berkas": "BRK_0024",
+      "prediction": 1,
+      "label": "Perlu pemeriksaan staf",
+      "model_score": 0.1875,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Skor mencapai ambang pemeriksaan"
+      ],
+      "warnings": [],
+      "history_source": "snapshot yang diberikan pengguna",
+      "history_records": 0,
+      "queue_at_entry": 0,
+      "derived_features": {
+        "jumlah_penghadap": 2,
+        "sla_hari": 10,
+        "antrean_berjalan": 0,
+        "ada_rups": 0,
+        "bulan_sin": -1.0,
+        "bulan_cos": -1.8369701987210297e-16,
+        "kategori_akta": "AJB_Saham",
+        "hari_masuk": "Selasa"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": -0.01446145623922348,
+        "reconstructed_probability": 0.1874999965237,
+        "additivity_error": 3.4762999978621423e-09,
+        "features": [
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": -1.8369701987210297e-16,
+            "shap": -0.05073098689317703
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 0.0,
+            "shap": 0.02221275307238102
+          },
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -1.0,
+            "shap": 0.020520830899477004
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 0.0,
+            "shap": -0.006464053317904473
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 9.535463
+    }
+  }
+]

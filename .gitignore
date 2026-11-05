@@ -1,0 +1,20 @@
+# Virtual environment dan cache
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Berkas sistem
+.DS_Store
+Thumbs.db
+
+# Halaman hasil render QA (dibuat ulang saat pemeriksaan)
+laporan_tugas_06/_pages*/
+laporan_tugas_06/*.pdf.png
+
+# Berkas sementara
+*.tmp
+*.bak
+~$*.docx
+~$*.pdf

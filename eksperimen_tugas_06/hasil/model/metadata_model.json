@@ -1,0 +1,61 @@
+{
+  "kelompok": "02",
+  "objek": "Kantor Notaris & PPAT Aries Buwana",
+  "mata_kuliah": "Pembelajaran Mesin",
+  "kelas": "KG.043.10.A",
+  "semester": "Gasal 2026/2027",
+  "tanggal_eksperimen": "2026-11-05T16:39:14.406040",
+  "algoritma": "DecisionTreeClassifier",
+  "baseline_params": {
+    "max_depth": 4,
+    "min_samples_leaf": 15,
+    "min_samples_split": 2,
+    "ccp_alpha": 0.0,
+    "class_weight": null
+  },
+  "tuned_params": {
+    "criterion": "gini",
+    "max_depth": 6,
+    "min_samples_leaf": 3,
+    "min_samples_split": 16,
+    "ccp_alpha": 0.0035355006645525064,
+    "class_weight": null,
+    "max_features": "log2"
+  },
+  "threshold_baseline_oof_f2": 0.06,
+  "threshold_tuned_oof_f2": 0.05,
+  "threshold_tuned_oof_f1": 0.25,
+  "threshold_operasional_guard": 0.19,
+  "threshold_dipakai_test": 0.05,
+  "n_train": 135,
+  "positif_train": 26,
+  "n_test": 34,
+  "positif_test": 7,
+  "fitur": [
+    "jumlah_penghadap",
+    "sla_hari",
+    "antrean_berjalan",
+    "ada_rups",
+    "bulan_sin",
+    "bulan_cos",
+    "kategori_akta",
+    "hari_masuk"
+  ],
+  "kolom_input": [
+    "id_berkas",
+    "tgl_masuk",
+    "tgl_selesai",
+    "tgl_rups",
+    "kategori_akta",
+    "jumlah_penghadap",
+    "sla_hari"
+  ],
+  "sha256_dataset": "686aa269511d6eb26ad661ebfde499ffbfd64383de4e84e93ea54ab23905785b",
+  "versi": {
+    "python": "3.12.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "optuna": "5.0.0"
+  }
+}

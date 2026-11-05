@@ -1,0 +1,59 @@
+{
+  "metode_pemilihan": "F2 maksimum pada prediksi OOF train; seri memilih precision lebih tinggi lalu threshold lebih besar",
+  "metrik_utama": "F2",
+  "alasan": "False negative (berkas terlambat tidak terdeteksi) dinilai lebih mahal daripada pemeriksaan tambahan akibat false positive.",
+  "threshold_f2_baseline": 0.06,
+  "threshold_f1_baseline": 0.06,
+  "threshold_f2_tuned": 0.05,
+  "threshold_f1_tuned": 0.25,
+  "threshold_operasional_guard": 0.19,
+  "guardrail": "Beban alarm OOF <= 50%; skenario kapasitas, bukan klaim kapasitas aktual kantor.",
+  "threshold_0_50": 0.5,
+  "threshold_alternatif": 0.25,
+  "daftar_threshold_diuji": [
+    0.5,
+    0.25,
+    0.19,
+    0.05
+  ],
+  "test_tidak_dipakai_memilih": true,
+  "baris_oof_f2_tuned": {
+    "threshold": 0.05,
+    "tp": 22.0,
+    "tn": 15.0,
+    "fp": 94.0,
+    "fn": 4.0,
+    "precision": 0.1896551724137931,
+    "recall": 0.8461538461538461,
+    "f1": 0.30985915492957744,
+    "f2": 0.5,
+    "alert_rate": 0.8592592592592593,
+    "alarm": 116.0
+  },
+  "baris_oof_f1_tuned": {
+    "threshold": 0.25,
+    "tp": 11.0,
+    "tn": 85.0,
+    "fp": 24.0,
+    "fn": 15.0,
+    "precision": 0.3142857142857143,
+    "recall": 0.4230769230769231,
+    "f1": 0.36065573770491804,
+    "f2": 0.39568345323741005,
+    "alert_rate": 0.25925925925925924,
+    "alarm": 35.0
+  },
+  "baris_oof_guard": {
+    "threshold": 0.19,
+    "tp": 15.0,
+    "tn": 60.0,
+    "fp": 49.0,
+    "fn": 11.0,
+    "precision": 0.234375,
+    "recall": 0.5769230769230769,
+    "f1": 0.3333333333333333,
+    "f2": 0.44642857142857145,
+    "alert_rate": 0.4740740740740741,
+    "alarm": 64.0
+  }
+}

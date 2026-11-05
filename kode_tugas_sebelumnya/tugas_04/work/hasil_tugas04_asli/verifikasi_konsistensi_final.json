@@ -1,0 +1,16 @@
+{
+  "n_asli": 169,
+  "train": 135,
+  "test": 34,
+  "positive_train": 28,
+  "positive_test": 7,
+  "input_values_unchanged": true,
+  "holdout_probabilities_match_saved_results": true,
+  "test_train_ids_disjoint": true,
+  "confusion_counts_f1_and_ap_match_saved_metrics": true,
+  "raw_input_sha256": "c7688b9b7a5a160304538b163a6ac73fdae9f21bf65a219e3a90ce98c5317097",
+  "subset_csv_sha256": "837cd78c30f18f00b69415b112ac011f7c1a3cf4db6beb6a0343de754169b1b0",
+  "new_predictors_generated_randomly": false,
+  "form_fields_not_used_in_current_model": true,
+  "original_t03_raw_matrix_provided": false
+}

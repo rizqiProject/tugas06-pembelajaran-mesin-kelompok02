@@ -1,0 +1,319 @@
+{
+  "waktu_mulai": "2026-11-05T16:39:14.406040",
+  "waktu_selesai": "2026-11-05T16:40:02.884373",
+  "durasi_total_detik": 48.478341,
+  "dataset": {
+    "n": 169,
+    "positif": 33,
+    "train": 135,
+    "test": 34
+  },
+  "validasi_historis_t05": {
+    "sumber_artefak": "/Users/admin/PEMBELAJARAN_MESIN_KELOMPOK_02/kode_tugas_sebelumnya/tugas_05/artifacts/model_final.joblib",
+    "sha256_artefak": "35699b81e4bbdf4c0f9c3c6539b9e2290b8ad27c912705536b0f585a32ac7c31",
+    "catatan": "Artefak Tugas 05 dimuat hanya untuk memeriksa konsistensi, bukan untuk tuning Tugas 06.",
+    "status": "berhasil dimuat",
+    "threshold_historis": 0.11,
+    "tp": 4,
+    "fn": 3,
+    "fp": 18,
+    "tn": 9,
+    "precision": 0.18181818181818182,
+    "recall": 0.5714285714285714,
+    "f1": 0.27586206896551724,
+    "cocok_dengan_laporan_tugas05": true
+  },
+  "optuna": {
+    "n_trials": 30,
+    "n_selesai": 30,
+    "arah": "maximize",
+    "objektif": "macro F1 (Stratified 5-Fold CV pada train)",
+    "sampler": "TPESampler(seed=42, n_startup_trials=8)",
+    "best_value_cv_macro_f1": 0.5531631709112877,
+    "best_trial": 13,
+    "best_params": {
+      "criterion": "gini",
+      "max_depth": 6,
+      "min_samples_leaf": 3,
+      "min_samples_split": 16,
+      "ccp_alpha": 0.0035355006645525064,
+      "class_weight": null,
+      "max_features": "log2"
+    },
+    "durasi_detik": 5.919903993606567,
+    "seed": 42,
+    "parameter_importance": {
+      "min_samples_leaf": 0.35392674406313807,
+      "ccp_alpha": 0.2970106392761658,
+      "min_samples_split": 0.11392747807892642,
+      "max_depth": 0.0994144574134655,
+      "class_weight": 0.08845164429098658,
+      "max_features": 0.038856955695162766,
+      "criterion": 0.008412081182154843
+    }
+  },
+  "cv_baseline": {
+    "macro_f1": {
+      "mean": 0.4466836734693878,
+      "std": 0.0051338295401780875,
+      "per_fold": [
+        0.4489795918367347,
+        0.4489795918367347,
+        0.4489795918367347,
+        0.4489795918367347,
+        0.4375
+      ]
+    },
+    "f1_positif": {
+      "mean": 0.0,
+      "std": 0.0,
+      "per_fold": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "precision": {
+      "mean": 0.0,
+      "std": 0.0,
+      "per_fold": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "recall": {
+      "mean": 0.0,
+      "std": 0.0,
+      "per_fold": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "average_precision": {
+      "mean": 0.23130147227973316,
+      "std": 0.06617350091223945,
+      "per_fold": [
+        0.16814814814814816,
+        0.34285714285714286,
+        0.2061904761904762,
+        0.21014492753623187,
+        0.22916666666666669
+      ]
+    },
+    "roc_auc": {
+      "mean": 0.523982683982684,
+      "std": 0.11103077529045403,
+      "per_fold": [
+        0.3636363636363636,
+        0.6681818181818182,
+        0.5409090909090909,
+        0.5590909090909091,
+        0.48809523809523814
+      ]
+    },
+    "log_loss": {
+      "mean": 0.7977913180137939,
+      "std": 0.5824957292561642,
+      "per_fold": [
+        0.6444101579571543,
+        0.48375749190191075,
+        0.5535316627951322,
+        0.47460032654376005,
+        1.8326569508710118
+      ]
+    }
+  },
+  "cv_tuned": {
+    "macro_f1": {
+      "mean": 0.5531631709112877,
+      "std": 0.11818116715213191,
+      "per_fold": [
+        0.625,
+        0.5597826086956521,
+        0.4489795918367347,
+        0.7065217391304348,
+        0.425531914893617
+      ]
+    },
+    "f1_positif": {
+      "mean": 0.21666666666666665,
+      "std": 0.21730674684008827,
+      "per_fold": [
+        0.3333333333333333,
+        0.25,
+        0.0,
+        0.5,
+        0.0
+      ]
+    },
+    "precision": {
+      "mean": 0.4,
+      "std": 0.4346134936801766,
+      "per_fold": [
+        1.0,
+        0.3333333333333333,
+        0.0,
+        0.6666666666666666,
+        0.0
+      ]
+    },
+    "recall": {
+      "mean": 0.16,
+      "std": 0.16733200530681513,
+      "per_fold": [
+        0.2,
+        0.2,
+        0.0,
+        0.4,
+        0.0
+      ]
+    },
+    "average_precision": {
+      "mean": 0.331156876892171,
+      "std": 0.1216908807797076,
+      "per_fold": [
+        0.32407407407407407,
+        0.2430976430976431,
+        0.44642857142857145,
+        0.4588235294117647,
+        0.18336056644880178
+      ]
+    },
+    "roc_auc": {
+      "mean": 0.5534776334776336,
+      "std": 0.20798209993130484,
+      "per_fold": [
+        0.36818181818181817,
+        0.5090909090909091,
+        0.75,
+        0.7909090909090909,
+        0.3492063492063493
+      ]
+    },
+    "log_loss": {
+      "mean": 1.49466475759036,
+      "std": 1.1024698595419486,
+      "per_fold": [
+        3.0174866388350505,
+        1.7289071716194055,
+        0.42892809367888374,
+        0.4029642167681807,
+        1.89503766705028
+      ]
+    }
+  },
+  "threshold_f2_baseline": 0.06,
+  "threshold_f2_tuned": 0.05,
+  "threshold_f1_tuned": 0.25,
+  "threshold_operasional_guard": 0.19,
+  "metrik_test_tuned_terpilih": {
+    "n": 34,
+    "positif": 7,
+    "threshold": 0.05,
+    "tp": 5,
+    "tn": 8,
+    "fp": 19,
+    "fn": 2,
+    "accuracy": 0.38235294117647056,
+    "precision": 0.20833333333333334,
+    "recall": 0.7142857142857143,
+    "f1": 0.3225806451612903,
+    "f2": 0.4807692307692308,
+    "macro_f1": 0.37750653879686136,
+    "weighted_f1": 0.40981588799425617,
+    "roc_auc": 0.4126984126984127,
+    "average_precision": 0.1903678126559333,
+    "log_loss": 1.1546236151114726,
+    "alert_rate": 0.7058823529411765,
+    "alarm": 24
+  },
+  "bootstrap": {
+    "f1": {
+      "mean": 0.3230303336956203,
+      "low": 0.1875,
+      "high": 0.45161290322580644
+    },
+    "recall": {
+      "mean": 0.718,
+      "low": 0.42857142857142855,
+      "high": 1.0
+    },
+    "precision": {
+      "mean": 0.2089836601587491,
+      "low": 0.12,
+      "high": 0.3
+    },
+    "f2": {
+      "mean": 0.4813345159059631,
+      "low": 0.2830188679245283,
+      "high": 0.660377358490566
+    },
+    "average_precision": {
+      "mean": 0.21239524243299626,
+      "low": 0.15555779802406489,
+      "high": 0.3251467556719657
+    },
+    "roc_auc": {
+      "mean": 0.4144179894179894,
+      "low": 0.21686507936507937,
+      "high": 0.6243386243386243
+    }
+  },
+  "analisis_kesalahan": {
+    "n_fp": 19,
+    "n_fn": 2,
+    "fp_ids": [
+      "BRK_0145",
+      "BRK_0130",
+      "BRK_0134",
+      "BRK_0017",
+      "BRK_0046",
+      "BRK_0003",
+      "BRK_0110",
+      "BRK_0026",
+      "BRK_0091",
+      "BRK_0117",
+      "BRK_0112",
+      "BRK_0125",
+      "BRK_0004",
+      "BRK_0103",
+      "BRK_0027",
+      "BRK_0029",
+      "BRK_0088",
+      "BRK_0146",
+      "BRK_0156"
+    ],
+    "fn_ids": [
+      "BRK_0001",
+      "BRK_0075"
+    ],
+    "fp_skor_min": 0.1935483870967742,
+    "fp_skor_maks": 0.6,
+    "fn_skor_min": 0.0,
+    "fn_skor_maks": 0.045454545454545456,
+    "fn_dengan_skor_nol": 1,
+    "fp_kategori": {
+      "PKR_PT": 12,
+      "PPJB": 3,
+      "Waris_Wasiat": 2,
+      "Pendirian_PT": 1,
+      "Perjanjian_Lain": 1
+    },
+    "fn_kategori": {
+      "Kuasa": 1,
+      "PKR_PT": 1
+    }
+  },
+  "uji_paritas_model": {
+    "max_abs_error": 0.0,
+    "prediksi_identik": true
+  }
+}

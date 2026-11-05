@@ -1,0 +1,3 @@
+model,accuracy,precision,recall,f1,tp,fn,fp,tn
+Selalu tepat waktu,0.7941176470588235,0.0,0.0,0.0,0,7,0,27
+Selalu terlambat,0.20588235294117646,0.20588235294117646,1.0,0.34146341463414637,7,0,27,0

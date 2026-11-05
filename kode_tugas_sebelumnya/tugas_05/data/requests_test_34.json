@@ -1,0 +1,376 @@
+[
+  {
+    "record": {
+      "id_berkas": "BRK_0110",
+      "tgl_masuk": "2025-12-30",
+      "kategori_akta": "Pendirian_PT",
+      "jumlah_penghadap": 4,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0004",
+      "tgl_masuk": "2024-04-30",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 1,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0103",
+      "tgl_masuk": "2025-12-17",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 5,
+      "sla_hari": 14,
+      "tgl_rups": "2025-12-17"
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0027",
+      "tgl_masuk": "2024-09-24",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 1,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0117",
+      "tgl_masuk": "2026-01-22",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 4,
+      "sla_hari": 14,
+      "tgl_rups": "2026-01-22"
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0024",
+      "tgl_masuk": "2024-09-17",
+      "kategori_akta": "AJB_Saham",
+      "jumlah_penghadap": 2,
+      "sla_hari": 10,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0167",
+      "tgl_masuk": "2026-09-09",
+      "kategori_akta": "Keputusan_Yayasan",
+      "jumlah_penghadap": 1,
+      "sla_hari": 21,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0112",
+      "tgl_masuk": "2026-01-08",
+      "kategori_akta": "Perjanjian_Lain",
+      "jumlah_penghadap": 4,
+      "sla_hari": 7,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0135",
+      "tgl_masuk": "2026-06-04",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 7,
+      "sla_hari": 14,
+      "tgl_rups": "2026-06-08"
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0145",
+      "tgl_masuk": "2026-06-23",
+      "kategori_akta": "PPJB",
+      "jumlah_penghadap": 3,
+      "sla_hari": 10,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0029",
+      "tgl_masuk": "2024-10-09",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 1,
+      "sla_hari": 14,
+      "tgl_rups": "2024-10-14"
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0017",
+      "tgl_masuk": "2024-08-30",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 1,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0128",
+      "tgl_masuk": "2026-04-13",
+      "kategori_akta": "Perubahan_CV",
+      "jumlah_penghadap": 3,
+      "sla_hari": 10,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0088",
+      "tgl_masuk": "2025-09-23",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 3,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0125",
+      "tgl_masuk": "2026-04-02",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 3,
+      "sla_hari": 14,
+      "tgl_rups": "2026-04-07"
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0026",
+      "tgl_masuk": "2024-09-11",
+      "kategori_akta": "Waris_Wasiat",
+      "jumlah_penghadap": 4,
+      "sla_hari": 21,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0154",
+      "tgl_masuk": "2026-07-23",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 2,
+      "sla_hari": 14,
+      "tgl_rups": "2026-06-30"
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0075",
+      "tgl_masuk": "2025-08-14",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 3,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0130",
+      "tgl_masuk": "2026-04-21",
+      "kategori_akta": "PPJB",
+      "jumlah_penghadap": 4,
+      "sla_hari": 10,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0168",
+      "tgl_masuk": "2026-10-02",
+      "kategori_akta": "Lainnya",
+      "jumlah_penghadap": 2,
+      "sla_hari": 7,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0076",
+      "tgl_masuk": "2025-08-20",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 2,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0091",
+      "tgl_masuk": "2025-10-14",
+      "kategori_akta": "Waris_Wasiat",
+      "jumlah_penghadap": 11,
+      "sla_hari": 21,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0046",
+      "tgl_masuk": "2025-01-17",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 1,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0003",
+      "tgl_masuk": "2024-05-03",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 1,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0064",
+      "tgl_masuk": "2025-06-23",
+      "kategori_akta": "Waris_Wasiat",
+      "jumlah_penghadap": 6,
+      "sla_hari": 21,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0134",
+      "tgl_masuk": "2026-04-27",
+      "kategori_akta": "PPJB",
+      "jumlah_penghadap": 5,
+      "sla_hari": 10,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0152",
+      "tgl_masuk": "2026-07-07",
+      "kategori_akta": "Pendirian_Lain",
+      "jumlah_penghadap": 2,
+      "sla_hari": 30,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0001",
+      "tgl_masuk": "2024-04-26",
+      "kategori_akta": "Kuasa",
+      "jumlah_penghadap": 1,
+      "sla_hari": 5,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0169",
+      "tgl_masuk": "2026-10-01",
+      "kategori_akta": "Lainnya",
+      "jumlah_penghadap": 11,
+      "sla_hari": 7,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0146",
+      "tgl_masuk": "2026-06-29",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 2,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0079",
+      "tgl_masuk": "2025-08-19",
+      "kategori_akta": "Perjanjian_Lain",
+      "jumlah_penghadap": 7,
+      "sla_hari": 7,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0035",
+      "tgl_masuk": "2024-10-24",
+      "kategori_akta": "Kuasa",
+      "jumlah_penghadap": 2,
+      "sla_hari": 5,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0018",
+      "tgl_masuk": "2024-09-03",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 1,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  },
+  {
+    "record": {
+      "id_berkas": "BRK_0156",
+      "tgl_masuk": "2026-07-27",
+      "kategori_akta": "PKR_PT",
+      "jumlah_penghadap": 4,
+      "sla_hari": 14,
+      "tgl_rups": null
+    },
+    "explain": true
+  }
+]

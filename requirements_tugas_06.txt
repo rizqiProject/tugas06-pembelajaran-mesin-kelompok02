@@ -1,0 +1,12 @@
+# Tugas 06 Pembelajaran Mesin - Kelompok 02
+# Versi yang dipakai saat eksperimen dan penyusunan laporan (5 November 2026)
+numpy==2.5.4
+pandas==3.1.1
+scikit-learn==1.9.1
+optuna==5.0.0
+matplotlib==3.11.2
+joblib==1.6.0
+python-docx==1.2.0
+scipy==1.18.1
+openpyxl==3.1.5
+Pillow==13.0.0

@@ -1,0 +1,92 @@
+{
+  "fixture_is_observed_office_data": false,
+  "history": [
+    {
+      "id_berkas": "UJI_H_OPEN",
+      "tgl_masuk": "2024-09-01",
+      "tgl_selesai": null
+    },
+    {
+      "id_berkas": "UJI_H_TODAY",
+      "tgl_masuk": "2024-09-01",
+      "tgl_selesai": "2024-09-17"
+    },
+    {
+      "id_berkas": "UJI_H_CLOSED",
+      "tgl_masuk": "2024-09-01",
+      "tgl_selesai": "2024-09-16"
+    },
+    {
+      "id_berkas": "UJI_H_SAME",
+      "tgl_masuk": "2024-09-17",
+      "tgl_selesai": null
+    },
+    {
+      "id_berkas": "UJI_H_FUTURE",
+      "tgl_masuk": "2024-09-18",
+      "tgl_selesai": null
+    }
+  ],
+  "response": {
+    "id_berkas": "BRK_0024",
+    "prediction": 1,
+    "label": "Perlu pemeriksaan staf",
+    "model_score": 0.1875,
+    "threshold_used": 0.11,
+    "default_threshold": 0.11,
+    "probability_calibrated": false,
+    "review_required": true,
+    "review_reasons": [
+      "Skor mencapai ambang pemeriksaan"
+    ],
+    "warnings": [],
+    "history_source": "snapshot yang diberikan pengguna",
+    "history_records": 5,
+    "queue_at_entry": 2,
+    "derived_features": {
+      "jumlah_penghadap": 2,
+      "sla_hari": 10,
+      "antrean_berjalan": 2,
+      "ada_rups": 0,
+      "bulan_sin": -1.0,
+      "bulan_cos": -1.8369701987210297e-16,
+      "kategori_akta": "AJB_Saham",
+      "hari_masuk": "Selasa"
+    },
+    "explanation": {
+      "base_value": 0.2019614527629235,
+      "sum_shap": -0.01446145623922348,
+      "reconstructed_probability": 0.1874999965237,
+      "additivity_error": 3.4762999978621423e-09,
+      "features": [
+        {
+          "feature": "bulan_cos",
+          "label": "Bulan cos",
+          "value": -1.8369701987210297e-16,
+          "shap": -0.05073098689317703
+        },
+        {
+          "feature": "hari_masuk_Kamis",
+          "label": "Hari = Kamis",
+          "value": 0.0,
+          "shap": 0.02221275307238102
+        },
+        {
+          "feature": "bulan_sin",
+          "label": "Bulan sin",
+          "value": -1.0,
+          "shap": 0.020520830899477004
+        },
+        {
+          "feature": "kategori_akta_PKR_PT",
+          "label": "Akta = PKR PT",
+          "value": 0.0,
+          "shap": -0.006464053317904473
+        }
+      ]
+    },
+    "model_version": "notaris-t04-export-1.0",
+    "processing_ms": 12.268379
+  },
+  "default_queue_after_custom_request": 1
+}

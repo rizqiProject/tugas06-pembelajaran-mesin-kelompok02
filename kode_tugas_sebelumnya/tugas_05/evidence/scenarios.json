@@ -1,0 +1,240 @@
+[
+  {
+    "name": "Kasus normal pada skenario baru",
+    "kind": "software_fixture",
+    "request": {
+      "record": {
+        "id_berkas": "UJI_NORMAL_001",
+        "tgl_masuk": "2026-10-29",
+        "kategori_akta": "PKR_PT",
+        "jumlah_penghadap": 2,
+        "sla_hari": 14,
+        "tgl_rups": null
+      },
+      "explain": true
+    },
+    "http_status": 200,
+    "response": {
+      "id_berkas": "UJI_NORMAL_001",
+      "prediction": 0,
+      "label": "Tidak terpicu alarm",
+      "model_score": 0.045454545454545456,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Masukan berbeda dari cakupan data latih"
+      ],
+      "warnings": [
+        "Tanggal masuk di luar periode train"
+      ],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 0,
+      "derived_features": {
+        "jumlah_penghadap": 2,
+        "sla_hari": 14,
+        "antrean_berjalan": 0,
+        "ada_rups": 0,
+        "bulan_sin": -0.8660254037844386,
+        "bulan_cos": 0.5000000000000001,
+        "kategori_akta": "PKR_PT",
+        "hari_masuk": "Kamis"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": -0.1565069124288857,
+        "reconstructed_probability": 0.045454540334037785,
+        "additivity_error": 5.120507670652863e-09,
+        "features": [
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -0.8660254037844386,
+            "shap": -0.06843750335276128
+          },
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": 0.5000000000000001,
+            "shap": -0.05413413643836975
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 1.0,
+            "shap": -0.03752841152250767
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 1.0,
+            "shap": 0.003593138884752989
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 19.185637
+    }
+  },
+  {
+    "name": "Skor lebih tinggi pada skenario baru",
+    "kind": "software_fixture",
+    "request": {
+      "record": {
+        "id_berkas": "UJI_RISIKO_001",
+        "tgl_masuk": "2026-12-01",
+        "kategori_akta": "PKR_PT",
+        "jumlah_penghadap": 8,
+        "sla_hari": 10,
+        "tgl_rups": null
+      },
+      "explain": true
+    },
+    "http_status": 200,
+    "response": {
+      "id_berkas": "UJI_RISIKO_001",
+      "prediction": 1,
+      "label": "Perlu pemeriksaan staf",
+      "model_score": 0.26666666666666666,
+      "threshold_used": 0.11,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Skor mencapai ambang pemeriksaan",
+        "Masukan berbeda dari cakupan data latih"
+      ],
+      "warnings": [
+        "Tanggal masuk di luar periode train"
+      ],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 0,
+      "derived_features": {
+        "jumlah_penghadap": 8,
+        "sla_hari": 10,
+        "antrean_berjalan": 0,
+        "ada_rups": 0,
+        "bulan_sin": -2.4492935982947064e-16,
+        "bulan_cos": 1.0,
+        "kategori_akta": "PKR_PT",
+        "hari_masuk": "Selasa"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": 0.06470522550866008,
+        "reconstructed_probability": 0.2666666782715836,
+        "additivity_error": 1.1604916916319041e-08,
+        "features": [
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": 1.0,
+            "shap": 0.06364877134561539
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 1.0,
+            "shap": -0.03100162962451577
+          },
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -2.4492935982947064e-16,
+            "shap": 0.021458335369825363
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 0.0,
+            "shap": 0.010599748417735099
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 8.809515
+    }
+  },
+  {
+    "name": "Tepat pada ambang keputusan",
+    "kind": "software_fixture",
+    "request": {
+      "record": {
+        "id_berkas": "UJI_AMBANG_001",
+        "tgl_masuk": "2024-09-17",
+        "kategori_akta": "AJB_Saham",
+        "jumlah_penghadap": 2,
+        "sla_hari": 10,
+        "tgl_rups": null
+      },
+      "threshold": 0.1875,
+      "explain": true
+    },
+    "http_status": 200,
+    "response": {
+      "id_berkas": "UJI_AMBANG_001",
+      "prediction": 1,
+      "label": "Perlu pemeriksaan staf",
+      "model_score": 0.1875,
+      "threshold_used": 0.1875,
+      "default_threshold": 0.11,
+      "probability_calibrated": false,
+      "review_required": true,
+      "review_reasons": [
+        "Skor mencapai ambang pemeriksaan",
+        "Skor berdekatan dengan ambang, dalam jarak 0,02"
+      ],
+      "warnings": [],
+      "history_source": "snapshot train Tugas 04",
+      "history_records": 135,
+      "queue_at_entry": 1,
+      "derived_features": {
+        "jumlah_penghadap": 2,
+        "sla_hari": 10,
+        "antrean_berjalan": 1,
+        "ada_rups": 0,
+        "bulan_sin": -1.0,
+        "bulan_cos": -1.8369701987210297e-16,
+        "kategori_akta": "AJB_Saham",
+        "hari_masuk": "Selasa"
+      },
+      "explanation": {
+        "base_value": 0.2019614527629235,
+        "sum_shap": -0.01446145623922348,
+        "reconstructed_probability": 0.1874999965237,
+        "additivity_error": 3.4762999978621423e-09,
+        "features": [
+          {
+            "feature": "bulan_cos",
+            "label": "Bulan cos",
+            "value": -1.8369701987210297e-16,
+            "shap": -0.05073098689317703
+          },
+          {
+            "feature": "hari_masuk_Kamis",
+            "label": "Hari = Kamis",
+            "value": 0.0,
+            "shap": 0.02221275307238102
+          },
+          {
+            "feature": "bulan_sin",
+            "label": "Bulan sin",
+            "value": -1.0,
+            "shap": 0.020520830899477004
+          },
+          {
+            "feature": "kategori_akta_PKR_PT",
+            "label": "Akta = PKR PT",
+            "value": 0.0,
+            "shap": -0.006464053317904473
+          }
+        ]
+      },
+      "model_version": "notaris-t04-export-1.0",
+      "processing_ms": 10.94349
+    }
+  }
+]

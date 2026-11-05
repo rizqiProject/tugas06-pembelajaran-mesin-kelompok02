@@ -1,0 +1,17 @@
+{
+  "browser": "134.0.6998.35",
+  "source_url": "http://127.0.0.1:8505",
+  "actual_browser_capture": true,
+  "viewport": {
+    "width": 1380,
+    "height": 1150
+  },
+  "device_scale_factor": 1.5,
+  "case_id": "BRK_0024",
+  "score": 0.1875,
+  "initial_threshold": 0.11,
+  "changed_threshold": 0.25,
+  "dynamic_threshold_ui_verified": true,
+  "invalid_id_ui_verified": true,
+  "result_text": "Hasil pemeriksaan\n\nPerlu pemeriksaan staf\n\nSkor risiko model\n\n18.75%\n\nAmbang pemeriksaan\n\n11.00%\n\nSkor belum dikalibrasi sebagai peluang nyata. Pemeriksaan berkas tetap dilakukan staf.\n\nAntrean awal hari: 1 berkas dari 135 catatan histori.\n\nFitur yang membentuk skor\n\nNilai dasar 0.20196 + kontribusi -0.01446 = skor 0.18750. Merah menaikkan, biru menurunkan skor.\n\nSaya sudah memeriksa hasil bersama kondisi berkas\n\nUnduh hasil pemeriksaan\n\nkeyboard_arrow_right\n\nDetail hasil dan fitur yang dihitung"
+}

@@ -1,0 +1,45 @@
+{
+  "n_fp": 19,
+  "n_fn": 2,
+  "fp_ids": [
+    "BRK_0145",
+    "BRK_0130",
+    "BRK_0134",
+    "BRK_0017",
+    "BRK_0046",
+    "BRK_0003",
+    "BRK_0110",
+    "BRK_0026",
+    "BRK_0091",
+    "BRK_0117",
+    "BRK_0112",
+    "BRK_0125",
+    "BRK_0004",
+    "BRK_0103",
+    "BRK_0027",
+    "BRK_0029",
+    "BRK_0088",
+    "BRK_0146",
+    "BRK_0156"
+  ],
+  "fn_ids": [
+    "BRK_0001",
+    "BRK_0075"
+  ],
+  "fp_skor_min": 0.1935483870967742,
+  "fp_skor_maks": 0.6,
+  "fn_skor_min": 0.0,
+  "fn_skor_maks": 0.045454545454545456,
+  "fn_dengan_skor_nol": 1,
+  "fp_kategori": {
+    "PKR_PT": 12,
+    "PPJB": 3,
+    "Waris_Wasiat": 2,
+    "Pendirian_PT": 1,
+    "Perjanjian_Lain": 1
+  },
+  "fn_kategori": {
+    "Kuasa": 1,
+    "PKR_PT": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "record": {
+    "id_berkas": "BRK_0024",
+    "tgl_masuk": "2024-09-17",
+    "kategori_akta": "AJB_Saham",
+    "jumlah_penghadap": "dua",
+    "sla_hari": 10,
+    "tgl_rups": null
+  },
+  "explain": true
+}

@@ -1,0 +1,25 @@
+|--- beban_7hari <= 11.5000
+|   |--- beban_7hari <= 6.5000
+|   |   |--- kategori_akta_AJB_Saham <= 0.5000
+|   |   |   |--- class: 1
+|   |   |--- kategori_akta_AJB_Saham >  0.5000
+|   |   |   |--- class: 0
+|   |--- beban_7hari >  6.5000
+|   |   |--- class: 0
+|--- beban_7hari >  11.5000
+|   |--- jumlah_penghadap <= 5.5000
+|   |   |--- bulan_cos <= -0.6830
+|   |   |   |--- beban_7hari <= 15.5000
+|   |   |   |   |--- class: 0
+|   |   |   |--- beban_7hari >  15.5000
+|   |   |   |   |--- class: 1
+|   |   |--- bulan_cos >  -0.6830
+|   |   |   |--- beban_7hari <= 16.5000
+|   |   |   |   |--- class: 1
+|   |   |   |--- beban_7hari >  16.5000
+|   |   |   |   |--- class: 0
+|   |--- jumlah_penghadap >  5.5000
+|   |   |--- perlu_pengesahan_kemenkum <= 0.5000
+|   |   |   |--- class: 1
+|   |   |--- perlu_pengesahan_kemenkum >  0.5000
+|   |   |   |--- class: 1
