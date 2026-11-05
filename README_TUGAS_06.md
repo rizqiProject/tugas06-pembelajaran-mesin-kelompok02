@@ -56,6 +56,8 @@ Artefak Tugas 05 dimuat ulang dan diuji pada 34 berkas yang sama. Pada ambang hi
 PEMBELAJARAN_MESIN_KELOMPOK_02/
 ├── AUDIT_FILE_PROYEK_TUGAS_06.md
 ├── CEK_KESESUAIAN_TEMPLATE_TUGAS_06.md
+├── PANDUAN_GITHUB_COLAB.md
+├── Jalankan_Tugas06_Colab.ipynb
 ├── README_TUGAS_06.md
 ├── data/
 │   └── berkas_notaris_terisi (2).csv
@@ -130,6 +132,8 @@ git push -u origin main
 ```
 
 Setelah repositori publik tersedia, tambahkan tautannya pada halaman Lampiran laporan (menggantikan catatan "belum tersedia") sebelum unggah ke LMS.
+
+Panduan langkah demi langkah untuk membuat akun GitHub, mempublikasikan repo, dan membuat tautan Colab ada di `PANDUAN_GITHUB_COLAB.md`. Notebook Colab yang siap dipakai ada di `Jalankan_Tugas06_Colab.ipynb`.
 
 ## 6. Batasan dan catatan pengumpulan
 
