@@ -106,10 +106,12 @@ dalam instruksi, yaitu 169 berkas, 33 terlambat, 136 tepat waktu, 135 train, dan
 | `eksperimen_tugas_06/eksperimen_tugas06.py` | Skrip utama: audit, Optuna, CV, OOF, threshold, evaluasi test, grafik, model |
 | `eksperimen_tugas_06/hasil/data/` | Tabel metrik, prediksi, error analysis, bootstrap, JSON ringkasan |
 | `eksperimen_tugas_06/hasil/optuna/` | Riwayat trial, parameter terbaik, kepentingan parameter |
-| `eksperimen_tugas_06/hasil/grafik/` | Delapan gambar hasil eksekusi |
+| `eksperimen_tugas_06/hasil/grafik/` | Delapan grafik hasil eksekusi dan satu tangkapan layar prototipe |
 | `eksperimen_tugas_06/hasil/model/` | Model before/after tuning dan metadata |
 | `eksperimen_tugas_06/hasil/log/` | Log eksekusi dan versi lingkungan |
-| `laporan_tugas_06/` | Laporan Word, PDF, README, dan dokumen audit |
+| `laporan_tugas_06/` | Laporan Word, PDF, dan skrip penyusun laporan |
+| `README_TUGAS_06.md` | Ringkasan hasil, struktur, dan cara menjalankan ulang |
+| `requirements_tugas_06.txt` | Daftar pustaka Python dan versinya |
 
 ## 4. Berkas yang tidak ditemukan
 
@@ -124,8 +126,9 @@ tersedia dan tidak dikarang:
    holdout 34 berkas yang sama dengan Tugas 04/05.
 4. **Tanda tangan basah anggota** — belum dibubuhkan; template menyediakan kolom
    tanda tangan untuk diisi manual.
-5. **Repositori publik GitHub/Google Colab** — belum ada tautan publik. Kode
-   disertakan lokal; tautan publik perlu dibuat oleh kelompok sebelum unggah.
+5. **Repositori publik GitHub/Google Colab** — belum ada tautan publik. Repositori
+   Git lokal sudah diinisialisasi dan di-commit; tautan publik perlu dibuat oleh
+   kelompok sebelum unggah.
 
 ## 5. Kondisi kode dan model sebelumnya
 
@@ -227,6 +230,8 @@ menjadi bukti bahwa dataset, split, dan pipeline yang diwarisi sudah benar.
 | 9 | Laporan Tugas 06 | Selesai |
 | 10 | Ekspor Word dan PDF | Selesai |
 | 11 | Pemeriksaan angka, referensi, dan kelengkapan | Selesai |
+| 12 | Verifikasi ulang determinisme eksperimen | Selesai; seluruh angka inti identik |
+| 13 | Repositori Git lokal dan paket unggah | Selesai untuk repositori lokal; tautan publik belum tersedia |
 
 ## 8. Batasan yang harus dicatat
 

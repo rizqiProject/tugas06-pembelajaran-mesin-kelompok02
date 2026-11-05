@@ -118,7 +118,19 @@ python3.12 -m venv .venv
 
 Eksperimen Tugas 06 dijalankan ulang pada 5 November 2026 untuk verifikasi. Seluruh angka inti identik dengan eksekusi sebelumnya; hanya durasi dan timestamp yang berubah.
 
-## 5. Batasan dan catatan pengumpulan
+## 5. Menyiapkan tautan repositori publik
+
+Folder ini sudah menjadi repositori Git lokal dengan satu commit. Untuk memenuhi komponen rubrik repositori, buat repositori kosong di GitHub (tanpa README), lalu jalankan:
+
+```bash
+git remote add origin https://github.com/<akun>/<nama-repo>.git
+git branch -M main
+git push -u origin main
+```
+
+Setelah repositori publik tersedia, tambahkan tautannya pada halaman Lampiran laporan (menggantikan catatan "belum tersedia") sebelum unggah ke LMS.
+
+## 6. Batasan dan catatan pengumpulan
 
 1. Data uji 34 berkas sudah pernah dipakai pada Tugas 04 dan Tugas 05. Tugas 06 tidak memilih parameter atau ambang dari data uji, tetapi data uji tersebut bukan lagi holdout yang sepenuhnya buta.
 2. Model belum layak untuk keputusan otomatis. Model diposisikan sebagai alat bantu penyaringan dengan pemeriksaan staf.
@@ -126,7 +138,7 @@ Eksperimen Tugas 06 dijalankan ulang pada 5 November 2026 untuk verifikasi. Selu
 4. Repositori Git lokal sudah diinisialisasi dan di-commit. Tautan repositori publik GitHub/Google Colab belum tersedia karena akun kelompok belum dihubungkan; folder ini siap diunggah.
 5. Dataset sumber tidak diubah. SHA-256 dataset: `686aa269511d6eb26ad661ebfde499ffbfd64383de4e84e93ea54ab23905785b`.
 
-## 6. Berkas utama laporan
+## 7. Berkas utama laporan
 
 | Bagian | Isi |
 |---|---|

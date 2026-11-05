@@ -13,8 +13,9 @@ Thumbs.db
 laporan_tugas_06/_pages*/
 laporan_tugas_06/*.pdf.png
 
-# Berkas sementara
+# Berkas sementara dan paket unggah
 *.tmp
 *.bak
+*.zip
 ~$*.docx
 ~$*.pdf
