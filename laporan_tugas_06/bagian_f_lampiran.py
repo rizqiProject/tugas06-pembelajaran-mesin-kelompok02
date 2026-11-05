@@ -141,12 +141,12 @@ def tulis(lap, D):
             'dan tidak dipakai untuk menghitung metrik Tugas 06. Model serialisasi '
             'Tugas 06 tersedia pada eksperimen_tugas_06/hasil/model/ dalam format '
             '.joblib dan telah diuji paritas prediksinya.')
-    lap.par('Repositori Git lokal sudah diinisialisasi dan seluruh kode serta '
-            'artefak sudah di-commit. Tautan repositori publik GitHub/Google Colab '
-            'belum tersedia karena akun kelompok belum dihubungkan saat laporan '
-            'disusun. Folder proyek siap diunggah; kelompok perlu membuat repositori '
-            'publik dan menambahkan tautannya sebelum unggah agar komponen '
-            'repositori terpenuhi.', italic=True)
+    lap.par('Repositori publik GitHub:', italic=True, ukuran=9, rata='left')
+    lap.par('https://github.com/rizqiProject/tugas06-pembelajaran-mesin-kelompok02',
+            italic=True, ukuran=9, rata='left')
+    lap.par('Repositori memuat kode eksperimen, hasil, model .joblib, grafik, '
+            'serta laporan Word dan PDF. Tautan dapat dibuka tanpa login.',
+            italic=True, ukuran=9, rata='left')
 
     lap.h2('Lampiran C. Cara menjalankan ulang')
     lap.par('Dari folder proyek, jalankan perintah berikut. Virtualenv sudah berisi '

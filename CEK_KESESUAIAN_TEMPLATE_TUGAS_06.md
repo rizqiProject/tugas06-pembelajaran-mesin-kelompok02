@@ -3,7 +3,7 @@
 **Kelompok:** 02  
 **Objek:** Kantor Notaris & PPAT Aries Buwana  
 **Tanggal pemeriksaan:** 5 November 2026  
-**Status:** Dokumen Word dan PDF sudah memakai Template Tugas 06; dua item manual belum selesai (tautan repositori publik dan tanda tangan).
+**Status:** Dokumen Word dan PDF sudah memakai Template Tugas 06; repositori publik sudah tersedia. Sisa satu item manual: tanda tangan Bagian F.
 
 ## 1. Sumber acuan yang dipakai
 
@@ -106,9 +106,9 @@ Seluruh tabel laporan diperiksa ulang terhadap JSON/CSV: Tabel 12, 13, 16, 17,
 
 ## 7. Sisa pekerjaan manual
 
-1. **Tautan repositori publik.** Repositori Git lokal sudah dibuat dan di-commit;
-   tautan publik belum ada karena akun GitHub/Colab kelompok belum dihubungkan.
-   Perintah publikasi ada di `README_TUGAS_06.md` bagian 5.
+1. **Tautan repositori publik.** Sudah tersedia:
+   `https://github.com/rizqiProject/tugas06-pembelajaran-mesin-kelompok02`
+   (branch `main`, dapat dibuka tanpa login).
 2. **Tanda tangan Bagian F.** Kolom sudah tersedia, tetapi belum ditandatangani
    basah oleh ketiga anggota.
 

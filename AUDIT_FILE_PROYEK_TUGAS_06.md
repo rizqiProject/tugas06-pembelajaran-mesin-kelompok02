@@ -127,9 +127,9 @@ tersedia dan tidak dikarang:
    holdout 34 berkas yang sama dengan Tugas 04/05.
 4. **Tanda tangan basah anggota** — belum dibubuhkan; template menyediakan kolom
    tanda tangan untuk diisi manual.
-5. **Repositori publik GitHub/Google Colab** — belum ada tautan publik. Repositori
-   Git lokal sudah diinisialisasi dan di-commit; tautan publik perlu dibuat oleh
-   kelompok sebelum unggah.
+5. **Repositori publik GitHub/Google Colab** — sudah tersedia di
+   `https://github.com/rizqiProject/tugas06-pembelajaran-mesin-kelompok02`
+   (branch `main`, publik).
 
 ## 5. Kondisi kode dan model sebelumnya
 
@@ -232,7 +232,7 @@ menjadi bukti bahwa dataset, split, dan pipeline yang diwarisi sudah benar.
 | 10 | Ekspor Word dan PDF | Selesai |
 | 11 | Pemeriksaan angka, referensi, dan kelengkapan | Selesai |
 | 12 | Verifikasi ulang determinisme eksperimen | Selesai; seluruh angka inti identik |
-| 13 | Repositori Git lokal dan paket unggah | Selesai untuk repositori lokal; tautan publik belum tersedia |
+| 13 | Repositori Git lokal dan paket unggah | Selesai; repo publik `rizqiProject/tugas06-pembelajaran-mesin-kelompok02` |
 
 ## 8. Batasan yang harus dicatat
 

@@ -121,17 +121,22 @@ python3.12 -m venv .venv
 
 Eksperimen Tugas 06 dijalankan ulang pada 5 November 2026 untuk verifikasi. Seluruh angka inti identik dengan eksekusi sebelumnya; hanya durasi dan timestamp yang berubah.
 
-## 5. Menyiapkan tautan repositori publik
+## 5. Repositori publik
 
-Folder ini sudah menjadi repositori Git lokal dengan satu commit. Untuk memenuhi komponen rubrik repositori, buat repositori kosong di GitHub (tanpa README), lalu jalankan:
+Repositori GitHub sudah tersedia dan dapat dibuka tanpa login:
+
+**https://github.com/rizqiProject/tugas06-pembelajaran-mesin-kelompok02**
+
+Branch utama adalah `main`. Repositori memuat kode eksperimen, hasil, model
+`.joblib`, grafik, laporan Word/PDF, README, dan panduan. Untuk memperbarui repo
+setelah ada perubahan lokal:
 
 ```bash
-git remote add origin https://github.com/<akun>/<nama-repo>.git
-git branch -M main
-git push -u origin main
+cd /Users/admin/PEMBELAJARAN_MESIN_KELOMPOK_02
+git add -A
+git commit -m "Perbarui laporan"
+git push origin main
 ```
-
-Setelah repositori publik tersedia, tambahkan tautannya pada halaman Lampiran laporan (menggantikan catatan "belum tersedia") sebelum unggah ke LMS.
 
 Panduan langkah demi langkah untuk membuat akun GitHub, mempublikasikan repo, dan membuat tautan Colab ada di `PANDUAN_GITHUB_COLAB.md`. Notebook Colab yang siap dipakai ada di `Jalankan_Tugas06_Colab.ipynb`.
 
