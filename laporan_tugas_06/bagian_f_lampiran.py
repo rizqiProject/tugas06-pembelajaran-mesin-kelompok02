@@ -33,7 +33,8 @@ def tulis(lap, D):
     lap.par('Pengembangan kode dan penyuntingan naskah memakai bantuan AI. Kelompok '
             'bertanggung jawab memeriksa ulang isi, memahami metode, dan mengesahkan '
             'laporan sebelum dikumpulkan. Tanda tangan basah belum dibubuhkan pada '
-            'berkas ini dan akan diisi sebelum unggah.')
+            'berkas ini dan akan dilengkapi sebagai berkas susulan setelah '
+            'unggahan awal.')
     lap.tabel(
         ['Peran', 'Nama Lengkap', 'NIM', 'Tanda Tangan'],
         [['Ketua Tim', 'Muhammad Rizqi Saputra', '12250158',
