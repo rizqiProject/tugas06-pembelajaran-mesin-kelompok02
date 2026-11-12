@@ -12,8 +12,8 @@ Dicky Handia (12250161)
 
 | Berkas | Keterangan |
 |---|---|
-| `PROPOSAL_UTS_ML_KELOMPOK_02_NOTARIS_PPAT.docx` | Naskah Word, 34 halaman |
-| `PROPOSAL_UTS_ML_KELOMPOK_02_NOTARIS_PPAT.pdf` | PDF final, 34 halaman |
+| `PROPOSAL_UTS_ML_KELOMPOK_02_NOTARIS_PPAT.docx` | Naskah Word, 35 halaman |
+| `PROPOSAL_UTS_ML_KELOMPOK_02_NOTARIS_PPAT.pdf` | PDF final, 35 halaman |
 | `buat_proposal.py` | Penyusun naskah dari template |
 | `analisis_proposal.py` | Benchmark baseline, EDA, sensitivitas ambang |
 | `perbarui_halaman.py` | Penyelaras nomor halaman daftar isi |

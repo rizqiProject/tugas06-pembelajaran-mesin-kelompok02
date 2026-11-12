@@ -36,16 +36,16 @@ Unggah kedua berkas di kedua tempat sesuai instruksi dosen.
       Cetak halaman 2 dan 3, tanda tangan tiga anggota, lalu unggah versi
       bertanda tangan sebagai berkas susulan bila belum sempat.
 
-## Isi laporan (34 halaman)
+## Isi laporan (35 halaman)
 
 | Bagian | Halaman | Isi |
 |---|---|---|
 | Cover, pengesahan, komitmen, daftar isi | 1–4 | Identitas dan legalitas |
 | Bab I Pendahuluan | 5–10 | Latar belakang, 6 masalah, 3 RQ, tujuan, manfaat, ruang lingkup |
 | Bab II Tinjauan Pustaka | 11–16 | Tabel 2.1 (5 jurnal), teori model, preprocessing, metrik, Optuna TPE |
-| Bab III Metodologi | 17–30 | CRISP-DM, dataset, EDA, pipeline bebas leakage, CV, baseline vs ensemble, Optuna, threshold, deployment |
-| Daftar Pustaka | 31–32 | 12 rujukan IEEE |
-| Lampiran | 33–34 | Repo, Colab, model, log Optuna, integritas |
+| Bab III Metodologi | 17–31 | CRISP-DM, dataset, EDA, pipeline bebas leakage, CV, baseline vs ensemble, Optuna, threshold, deployment |
+| Daftar Pustaka | 32–33 | 12 rujukan IEEE |
+| Lampiran | 34–35 | Repo, Colab, model, log Optuna, integritas |
 
 ## Jangan diunggah
 

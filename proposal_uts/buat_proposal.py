@@ -1005,6 +1005,19 @@ def bab_3():
               'data uji dan dilengkapi interval kepercayaan.'),
     ])
 
+    sisip_blok(cari('Meskipun rata-rata naik'), [
+        ('img', GRAFIK / '04_optuna_history.png', 13.2),
+        ('cap', 'Gambar 3.5 Riwayat 30 trial Optuna. Garis putus-putus menandai '
+                'nilai terbaik (trial #13, Macro F1 0,5532); sumbu kanan '
+                'menunjukkan akumulasi trial terbaik.'),
+        ('p', 'Gambar 3.5 memperlihatkan bahwa perbaikan terbesar terjadi pada '
+              'delapan trial pemanasan, lalu melandai setelah trial ke-15. Pola '
+              'ini wajar untuk TPE: setelah distribusi l(x) dan g(x) terbentuk, '
+              'sampler memusatkan pencarian pada daerah yang sudah baik. Karena '
+              'kurva mendatar sebelum trial ke-30, penambahan trial besar '
+              'kemungkinan tidak memberi peningkatan berarti pada dataset ini.'),
+    ])
+
     p = cari('3.8 Kalibrasi Ambang Batas')
     sisip_blok(p, [
         ('p', 'Ambang dipilih dari probabilitas out-of-fold data latih, bukan dari '
@@ -1067,15 +1080,35 @@ def bab_3():
               'berlebihan.'),
     ])
 
+    sisip_blok(cari('Interval kepercayaan bootstrap'), [
+        ('img', GRAFIK / '03_threshold_tuning_oof.png', 13.2),
+        ('cap', 'Gambar 3.6 Sensitivitas precision, recall, dan F2 terhadap '
+                'ambang keputusan pada prediksi out-of-fold data latih. Titik '
+                'terpilih 0,05 dan guardrail 0,19 ditandai.'),
+        ('p', 'Gambar 3.6 menjelaskan dasar pemilihan ambang. Ketika ambang '
+              'diturunkan dari 0,50 ke 0,05, recall naik tajam karena lebih '
+              'banyak berkas melewati batas alarm, sedangkan precision turun '
+              'perlahan. Kurva F2 mencapai puncak di sekitar 0,05, lebih rendah '
+              'daripada puncak F1 yang berada di sekitar 0,25. Perbedaan posisi '
+              'kedua puncak inilah yang membuat pilihan ambang bergantung pada '
+              'fungsi biaya, bukan pada satu metrik tunggal.'),
+        ('p', 'Grafik ini juga menunjukkan mengapa ambang 0,19 dipakai sebagai '
+              'guardrail: pada titik tersebut kurva mulai mendatar, sehingga '
+              'penurunan ambang lebih jauh menambah beban alarm tanpa kenaikan '
+              'recall yang sebanding. Dengan demikian, keputusan operasional '
+              'dapat dipertanggungjawabkan secara visual, bukan hanya melalui '
+              'angka di tabel.'),
+    ])
+
     p = cari('[TEMPELKAN GAMBAR 3.3')
     fmt(p, '', align=WD_ALIGN_PARAGRAPH.CENTER, indent=0, space_before=6,
         space_after=3)
     p.add_run().add_picture(str(GRAFIK / '02_roc_pr.png'), width=Cm(14.4))
     kursor = sisip_blok(p, [
-        ('cap', 'Gambar 3.3 Kurva ROC (kiri) dan kurva precision-recall (kanan) '
+        ('cap', 'Gambar 3.7 Kurva ROC (kiri) dan kurva precision-recall (kanan) '
                 'model terbaik pada data uji, dengan penanda ambang 0,50; 0,19; '
                 'dan ambang terpilih 0,05.'),
-        ('p', 'Gambar 3.3 menunjukkan mengapa pemilihan ambang tidak dapat '
+        ('p', 'Gambar 3.7 menunjukkan mengapa pemilihan ambang tidak dapat '
               'dilepaskan dari kurva. ROC-AUC 0,413 berada di bawah 0,5, yang '
               'berarti kemampuan peringkat model pada data uji ini lemah dan '
               'bahkan sedikit di bawah tebakan acak, dengan PR-AUC (average '
@@ -1100,9 +1133,9 @@ def bab_3():
     p2.add_run().add_picture(str(GRAFIK / '01_confusion_matrix_tuned.png'),
                              width=Cm(10.2))
     sisip_blok(p2, [
-        ('cap', 'Gambar 3.4 Confusion matrix model terbaik pada ambang terpilih '
+        ('cap', 'Gambar 3.8 Confusion matrix model terbaik pada ambang terpilih '
                 '0,05 (TP 5, FN 2, FP 19, TN 8).'),
-        ('p', 'Gambar 3.4 memperlihatkan komposisi kesalahan secara utuh. Dari 7 '
+        ('p', 'Gambar 3.8 memperlihatkan komposisi kesalahan secara utuh. Dari 7 '
               'berkas terlambat, 5 berhasil ditandai dan 2 terlewat. Kedua false '
               'negative tersebut adalah BRK_0001 (Kuasa, selisih 5 hari) dan '
               'BRK_0075 (PKR_PT, selisih 4 hari). BRK_0001 memperoleh skor '
@@ -1161,13 +1194,13 @@ def bab_3():
     p = cari('Sebagai persiapan implementasi terapan')
     ganti_blok(p, [
         ('p', 'Prototipe antarmuka yang telah dibangun pada Tugas 05 menjadi '
-              'titik awal deployment. Gambar 3.5 memperlihatkan tampilan '
+              'titik awal deployment. Gambar 3.9 memperlihatkan tampilan '
               'prototipe ketika menerima masukan berkas dan menampilkan hasil '
               'prediksi beserta ambang yang berlaku. Pada tahap UAS, prototipe '
               'akan dihubungkan dengan model hasil Tugas 06 dan dilengkapi '
               'pencatatan hasil aktual untuk pemantauan.'),
         ('img', GRAFIK / '09_prototipe_tugas05.png', 12.4),
-        ('cap', 'Gambar 3.5 Prototipe antarmuka Streamlit pada Tugas 05 yang '
+        ('cap', 'Gambar 3.9 Prototipe antarmuka Streamlit pada Tugas 05 yang '
                 'menjadi dasar rencana deployment.'),
     ])
 
