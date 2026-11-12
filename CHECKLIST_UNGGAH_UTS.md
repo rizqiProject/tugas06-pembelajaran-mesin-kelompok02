@@ -10,6 +10,10 @@
 |---|---|---|---|
 | 1 | `PROPOSAL_UTS_ML_KELOMPOK_02_NOTARIS_PPAT.pdf` | 1,3 MB | `proposal_uts/` |
 | 2 | `PROPOSAL_UTS_ML_KELOMPOK_02_NOTARIS_PPAT.docx` | 590 KB | `proposal_uts/` |
+| 3 | `REPO_UTS_KELOMPOK_02.zip` | 11 MB | folder utama |
+
+Berkas 1 dan 2 wajib. Berkas 3 mengikuti pola teman sekelas yang mengunggah
+`REPO_UTS_KELOMPOK_XX.zip` berisi kode dan laporan.
 
 Salinan siap unggah juga ada di Desktop:
 `/Users/admin/Desktop/UPLOAD_UTS_KELOMPOK_02/`
