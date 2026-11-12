@@ -4,9 +4,17 @@
 **Mata kuliah:** Pembelajaran Mesin (KG.043.10.A) — Semester Gasal 2026/2027  
 **Anggota:** Muhammad Rizqi Saputra (12250158), Dian Nur Cahya (12250162), Dicky Handia (12250161)
 
-Repositori ini memuat laporan, kode eksperimen, hasil, grafik, dan model Tugas 06.
+Repositori ini memuat laporan Tugas 06, proposal UTS, kode eksperimen, hasil,
+grafik, dan model.
 
-## Laporan
+## Proposal UTS
+
+- [Proposal UTS PDF](proposal_uts/PROPOSAL_UTS_ML_KELOMPOK_02_NOTARIS_PPAT.pdf)
+- [Proposal UTS Word](proposal_uts/PROPOSAL_UTS_ML_KELOMPOK_02_NOTARIS_PPAT.docx)
+- [README proposal dan cara membangun ulang](proposal_uts/README_UTS.md)
+- [Checklist unggah UTS](CHECKLIST_UNGGAH_UTS.md)
+
+## Laporan Tugas 06
 
 - [Laporan PDF](laporan_tugas_06/TUGAS_06_KELOMPOK_02_NOTARIS_PPAT.pdf)
 - [Laporan Word](laporan_tugas_06/TUGAS_06_KELOMPOK_02_NOTARIS_PPAT.docx)

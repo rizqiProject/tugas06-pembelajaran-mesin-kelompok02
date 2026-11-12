@@ -11,6 +11,7 @@ Thumbs.db
 
 # Halaman hasil render QA (dibuat ulang saat pemeriksaan)
 laporan_tugas_06/_pages*/
+proposal_uts/_render*/
 laporan_tugas_06/*.pdf.png
 
 # Berkas sementara dan paket unggah
